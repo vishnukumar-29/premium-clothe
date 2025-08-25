@@ -1,17 +1,17 @@
 /* Reset & basic styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* Container */
-    .container {
-    max-width: 1152px !important;
-    margin: 0 auto;
+.container {
+  max-width: 1152px !important;
+  margin: 0 auto;
 }
 
 
@@ -21,98 +21,183 @@
 
 /* Root variables */
 :root {
-    /* Font sizes */
-    --font-xs: 11px;
-    --font-sm: 14px;
-    --font-lg: 28px;
-    --font-xxl: 50px;
-    --font-xxxl: 80px;
+  /* Font sizes */
+  --font-xs: 11px;
+  --font-sm: 14px;
+  --font-lg: 28px;
+  --font-xxl: 50px;
+  --font-xxxl: 80px;
 
-    /* Colors */
-    --grey: #afafaf;
-    --pink: #c40a3b;
-    --light-grey: #e6e6e6;
-    --primary-grey: #dcdcdc;
-    --light-white: #fafafa;
-    --primary-white: #f6f6f6;
-    --custom-black: #010101;
+  /* Colors */
+  --grey: #afafaf;
+  --pink: #c40a3b;
+  --light-grey: #e6e6e6;
+  --primary-grey: #dcdcdc;
+  --light-white: #fafafa;
+  --primary-white: #f6f6f6;
+  --custom-black: #010101;
 
-    /* Line heights */
-    --lh-100: 100%;
-    --lh-120: 120%;
-    --lh-160: 160%;
+  /* Line heights */
+  --lh-100: 100%;
+  --lh-120: 120%;
+  --lh-160: 160%;
 }
 
 /* Font size classes */
-.fs-xs { font-size: var(--font-xs); }
-.fs-sm { font-size: var(--font-sm); }
-.fs-lg { font-size: var(--font-lg); }
-.fs-xxl { font-size: var(--font-xxl); }
-.fs-xxxl { font-size: var(--font-xxxl); }
+.fs-xs {
+  font-size: var(--font-xs);
+}
+
+.fs-sm {
+  font-size: var(--font-sm);
+}
+
+.fs-lg {
+  font-size: var(--font-lg);
+}
+
+.fs-xxl {
+  font-size: var(--font-xxl);
+}
+
+.fs-xxxl {
+  font-size: var(--font-xxxl);
+}
 
 /* Color classes */
-.text-grey { color: var(--grey); }
-.text-light-grey { color: var(--light-grey); }
-.bg-primary-white { background-color: var(--primary-white); }
-.bg-pink { background-color: var(--pink); }
-.bg-primary-grey { background-color: var(--primary-grey); }
-.text-light-white { color: var(--light-white); }
-.text-custom-black { color: var(--custom-black); }
-.bg-custom-black { background-color: var(--custom-black); }
+.text-grey {
+  color: var(--grey);
+}
+
+.text-light-grey {
+  color: var(--light-grey);
+}
+
+.bg-primary-white {
+  background-color: var(--primary-white);
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.bg-primary-grey {
+  background-color: var(--primary-grey);
+}
+
+.text-light-white {
+  color: var(--light-white);
+}
+
+.text-custom-black {
+  color: var(--custom-black);
+}
+
+.bg-custom-black {
+  background-color: var(--custom-black);
+}
 
 /* Line height classes */
-.lh-100 { line-height: var(--lh-100); }
-.lh-120 { line-height: var(--lh-120); }
-.lh-160 { line-height: var(--lh-160); }
+.lh-100 {
+  line-height: var(--lh-100);
+}
+
+.lh-120 {
+  line-height: var(--lh-120);
+}
+
+.lh-160 {
+  line-height: var(--lh-160);
+}
 
 /* Font families */
-.bricolage { font-family: "Bricolage Grotesque", sans-serif; }
-.font-inter { font-family: "Inter", sans-serif; }
+.bricolage {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
 
-.shadow-light{
-    box-shadow: 0px 4px 25px 0px #01010114;
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.shadow-light {
+  box-shadow: 0px 4px 25px 0px #01010114;
 
 }
 
 
- @keyframes scrollUp {
-      0% {
-        transform: translateY(0);
-      }
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
 
-      100% {
-        transform: translateY(-50%);
-      }
-    }
+  100% {
+    transform: translateY(-50%);
+  }
+}
 
-    @keyframes scrollDown {
-      0% {
-        transform: translateY(-50%);
-      }
+@keyframes scrollleft {
+  0% {
+    transform: translateX(0);
+  }
 
-      100% {
-        transform: translateY(0);
-      }
-    }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-    .slider {
-      overflow: hidden;
-      height: 610px;
-      position: relative;
-    }
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
 
-    .slider-track {
-      display: flex;
-      flex-direction: column;
-      animation: scrollUp 15s linear infinite;
-    }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-    .slider-track.reverse {
-      animation: scrollDown 15s linear infinite;
-    }
+.slider {
+  overflow: hidden;
+  height: 610px;
+  position: relative;
+}
 
-    .slider-track img {
-      width: 250px;
-      border-radius: 12px;
-      margin-bottom: 16px;
-    }
+
+.slider-track.reverse {
+  animation: scrollDown 15s linear infinite;
+}
+
+.slider-track img {
+  width: 250px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.slider-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 15s linear infinite;
+}
+
+@media (max-width:640px) {
+  .slider-track.reverse {
+  animation: scrollleft 15s linear infinite;
+}
+.slider {
+  overflow: hidden;
+  height: 610px;
+  /* position: relative; */
+}
+
+  .slider-track {
+    display: flex;
+    flex-direction: row;
+    animation: scrollleft 9s linear infinite;
+  }
+  .slider {
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+}
+
+
+}
