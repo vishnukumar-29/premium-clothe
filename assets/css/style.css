@@ -72,6 +72,9 @@
 .text-light-grey {
   color: var(--light-grey);
 }
+.text-pink {
+  color: var(--pink);
+}
 
 .bg-primary-white {
   background-color: var(--primary-white);
@@ -163,7 +166,7 @@
 
 
 .slider-track.reverse {
-  animation: scrollDown 15s linear infinite;
+  animation: scrollDown 5s linear infinite;
 }
 
 .slider-track img {
@@ -175,12 +178,22 @@
 .slider-track {
   display: flex;
   flex-direction: column;
-  animation: scrollUp 15s linear infinite;
+  animation: scrollUp 5s linear infinite;
 }
 
 @media (max-width:640px) {
+
+  textarea{
+    font-size: 14px !important;
+  }
+  input{
+    font-size: 14px !important;
+  }
   .slider-track.reverse {
-  animation: scrollleft 15s linear infinite;
+  animation: scrollleft 8s linear infinite;
+}
+  .slider-track img {
+    min-width: 200px;
 }
 .slider {
   overflow: hidden;
@@ -191,7 +204,7 @@
   .slider-track {
     display: flex;
     flex-direction: row;
-    animation: scrollleft 9s linear infinite;
+    animation: scrollleft 5s linear infinite;
   }
   .slider {
   overflow: hidden;
@@ -200,4 +213,22 @@
 }
 
 
+}
+
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d3d3d3; /* grey */
+  opacity: 1;
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
+}
+
+/* Active bullet style (pill shape) */
+.swiper-pagination-bullet-active {
+  width: 30px !important; /* makes it pill */
+  height: 10px;
+  background: #000 !important; /* black */
+  border-radius: 9px !important;
 }
