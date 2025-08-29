@@ -1342,7 +1342,7 @@
       <p class="max-w-[280px] text-center text-base font-normal font-inter mb-7 lh-160 mx-auto text-custom-black">For
         all new product purchase min. Purchase Rp. 350.00</p>
       <div class="">
-        <button  id="payModalOpenBtn"
+        <button id="payModalOpenBtn"
           class="text-light-white cursor-pointer w-[142px] text-base font-normal font-inter text-center lh-100 text-center mb-0 max-w-[full] h-11 mx-auto max-w-[142px] bg-custom-black flex justify-center items-center rounded-full hover:bg-white hover:text-black hover:shadow-xl duration-500 hover:border-[1px] hover:border-black">Shop
           Now</button>
       </div>
@@ -1436,12 +1436,12 @@
 
   <!-- Modal Background -->
   <div id="payModalWrapper"
-    class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 transition-opacity duration-500">
+    class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 transition-opacity duration-500 p-4">
 
     <!-- Modal Content -->
-    <div class="m-4 max-w-[900px] md:mx-auto">
+    <div class=" max-w-[900px] md:mx-auto w-full max-h-[90vh] overflow-y-auto rounded-[40px]">
       <div
-        class="bg-white max-w-[900px] w-full md:w-[900px] flex flex-col items-center justify-center mx-auto max-md:px-4 max-md:py-9 px-6 py-14 rounded-[40px] transform scale-90 opacity-0 transition-all duration-500"
+        class="bg-white max-w-[900px] w-full flex flex-col items-center justify-center mx-auto max-md:px-4 max-md:py-9 px-6 py-14  rounded-[20px] md:rounded-[30px] lg:rounded-[40px] transform scale-90 opacity-0 transition-all duration-500"
         id="payModalContent">
 
         <!-- Header -->
@@ -1451,18 +1451,20 @@
         </div>
 
         <!-- Title -->
-        <p class="text-3xl sm:text-4xl md:text-[50px] font-semibold text-custom-black !leading-[120%] mt-4 mb-2 md:mb-4 text-center max-w-[500px]">
+        <p
+          class="text-3xl sm:text-4xl md:text-[50px] font-semibold text-custom-black !leading-[120%] mt-4 mb-2 md:mb-4 text-center max-w-[500px]">
           Scan & Pay for Your Ordered item
         </p>
 
         <!-- Description -->
         <p class="text-sm sm:text-base text-grey mb-3 md:mb-10 text-center max-w-[550px]">
           Easily complete your payment by scanning the QR code below. Please make sure to enter the correct details so
-          we can confirm your order quickly.
+          we
+          can confirm your order quickly.
         </p>
 
         <!-- QR Image -->
-        <img class="rounded-[16px] border border-[#ffccd9] border-[6px] sixe-[200px] md:size-[300px] mb-3 md:mb-10"
+        <img class="rounded-[16px] border border-[#ffccd9] border-[6px] w-[200px] sm:w-[300px] h-auto mb-3 md:mb-10"
           src="./assets/images/webp/bar-code.png" alt="bar code">
 
         <!-- Footer -->
@@ -1472,22 +1474,21 @@
             Note: <span class="font-normal"> Submit your payment screenshot with your dress here</span>
           </p>
 
-          <!-- WhatsApp button -->
-          <a href="https://wa.me/9992877529?text=Hello,%20I%20am%20submitting%20my%20payment%20screenshot."
-            target="_blank"
+          <a href="https://wa.me/9992977529?text=Hello" target="_blank"
             class="w-[156px] py-3 px-2 max-md:mt-5 bg-black text-white font-semibold hover:bg-white border hover:border-black hover:text-black hover:shadow-light duration-500 rounded-full text-center">
             Submit here
           </a>
         </div>
 
         <!-- Close Button -->
-        <button id="payModalCloseBtn"
-        class="">
-        
-      </button>
+        <!-- <button id="payModalCloseBtn"
+        class="absolute top-4 right-4 text-black text-2xl font-bold">
+        ✕
+      </button> -->
       </div>
     </div>
   </div>
+
   <script>
     const payModalOpenBtn = document.getElementById("payModalOpenBtn");
     const payModalCloseBtn = document.getElementById("payModalCloseBtn");
@@ -1495,9 +1496,9 @@
     const payModalContent = document.getElementById("payModalContent");
 
     // Open Modal
-    payModalOpenBtn.addEventListener("click", () => {
+    payModalOpenBtn?.addEventListener("click", () => {
       payModalWrapper.classList.remove("hidden");
-      document.body.classList.add("overflow-hidden"); // disable scroll
+      document.body.classList.add("overflow-hidden"); // disable page scroll
       setTimeout(() => {
         payModalContent.classList.remove("scale-90", "opacity-0");
         payModalContent.classList.add("scale-100", "opacity-100");
@@ -1510,12 +1511,12 @@
       payModalContent.classList.add("scale-90", "opacity-0");
       setTimeout(() => {
         payModalWrapper.classList.add("hidden");
-        document.body.classList.remove("overflow-hidden"); // enable scroll
+        document.body.classList.remove("overflow-hidden"); // enable page scroll
       }, 500);
     }
 
     // Close on button click
-    payModalCloseBtn.addEventListener("click", closePayModal);
+    payModalCloseBtn?.addEventListener("click", closePayModal);
 
     // Close on background click (outside content)
     payModalWrapper.addEventListener("click", (e) => {
@@ -1531,6 +1532,7 @@
       }
     });
   </script>
+
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('menu');
