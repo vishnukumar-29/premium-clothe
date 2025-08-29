@@ -258,3 +258,12 @@
         .swiper-button-prev::after {
             content: "" !important;
         }
+
+            .vertical-swiper {
+      height: 600px; /* Adjust height */
+      width: 250px;  /* Adjust width */
+    }
+
+    /* .swiper-slide img {
+      border-radius: 16px;
+    } */

@@ -19,56 +19,56 @@
 
 <body class="  font-inter">
 
- <div class="bg-primary-grey">
-  <div class="flex justify-between gap-x-10 items-center py-3.5 container px-4 max-lg:!max-w-full">
-    <p class="text-xs md:text-sm font-inter font-normal text-custom-black lh-100 mb-0">
-      Effortless Elegance: Curated fashion, shop our new collection.
-      <a href="#" class="border-b border-black">Shop Now</a>
-    </p>
+  <div class="bg-primary-grey">
+    <div class="flex justify-between gap-x-10 items-center py-3.5 container px-4 max-lg:!max-w-full">
+      <p class="text-xs md:text-sm font-inter font-normal text-custom-black lh-100 mb-0">
+        Effortless Elegance: Curated fashion, shop our new collection.
+        <a href="#" class="border-b border-black">Shop Now</a>
+      </p>
 
-    <!-- Custom Flag Dropdown -->
-    <div class="relative inline-block text-left">
-      <button id="dropdownBtn" 
-        class="flex items-center gap-2 px-3 py-2 ">
-        <img id="selectedFlag" src="https://flagcdn.com/w20/gb.png" alt="UK" class="w-5 h-5">
-        <span id="selectedText">En</span>
-        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
+      <!-- Custom Flag Dropdown -->
+      <div class="relative inline-block text-left">
+        <button id="dropdownBtn" class="flex items-center gap-2 px-3 py-2 ">
+          <img id="selectedFlag" src="https://flagcdn.com/w20/gb.png" alt="UK" class="w-5 h-5">
+          <span id="selectedText">En</span>
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
 
-      <!-- Dropdown menu -->
-      <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg z-[60]">
-        <ul class="py-1">
-          <li>
-            <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
-              data-flag="https://flagcdn.com/w20/gb.png" data-text="En">
-              <img src="https://flagcdn.com/w20/gb.png" alt="UK" class="w-5 h-5"> English
-            </button>
-          </li>
-          <li>
-            <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
-              data-flag="https://flagcdn.com/w20/fr.png" data-text="Français">
-              <img src="https://flagcdn.com/w20/fr.png" alt="FR" class="w-5 h-5"> Français
-            </button>
-          </li>
-          <li>
-            <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
-              data-flag="https://flagcdn.com/w20/de.png" data-text="Deutsch">
-              <img src="https://flagcdn.com/w20/de.png" alt="DE" class="w-5 h-5"> Deutsch
-            </button>
-          </li>
-          <li>
-            <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
-              data-flag="https://flagcdn.com/w20/in.png" data-text="हिंदी">
-              <img src="https://flagcdn.com/w20/in.png" alt="IN" class="w-5 h-5"> हिंदी
-            </button>
-          </li>
-        </ul>
+        <!-- Dropdown menu -->
+        <div id="dropdownMenu"
+          class="hidden absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg z-[60]">
+          <ul class="py-1">
+            <li>
+              <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
+                data-flag="https://flagcdn.com/w20/gb.png" data-text="En">
+                <img src="https://flagcdn.com/w20/gb.png" alt="UK" class="w-5 h-5"> English
+              </button>
+            </li>
+            <li>
+              <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
+                data-flag="https://flagcdn.com/w20/fr.png" data-text="Français">
+                <img src="https://flagcdn.com/w20/fr.png" alt="FR" class="w-5 h-5"> Français
+              </button>
+            </li>
+            <li>
+              <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
+                data-flag="https://flagcdn.com/w20/de.png" data-text="Deutsch">
+                <img src="https://flagcdn.com/w20/de.png" alt="DE" class="w-5 h-5"> Deutsch
+              </button>
+            </li>
+            <li>
+              <button class="dropdownItem flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-100"
+                data-flag="https://flagcdn.com/w20/in.png" data-text="हिंदी">
+                <img src="https://flagcdn.com/w20/in.png" alt="IN" class="w-5 h-5"> हिंदी
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <div class="container px-4 mx-auto py-[15px] flex justify-between items-center">
     <a href="">
       <img src="./assets/images/svg/nav-logo.svg" alt="logo" class="w-[108px] h-10">
@@ -81,15 +81,38 @@
           class="text-sm md:text-base text-grey hover:text-black duration-500 lh-100 font-normal font-inter mb-0">Home</a>
       </li>
       <li><a href="#"
+          class="text-sm md:text-base text-grey hover:text-black duration-500 lh-100 font-normal font-inter mb-0">About
+          Us</a>
+      </li>
+      <li><a href="#"
           class="text-sm md:text-base text-grey hover:text-black duration-500 lh-100 font-normal font-inter mb-0">50%
           Off</a></li>
       <li><a href="#"
           class="text-sm md:text-base text-grey hover:text-black duration-500 lh-100 font-normal font-inter mb-0">Combo
           sets</a></li>
       <button id=""
-    class="flex gap-x-2 items-center nav-link px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
-    Report
-  </button>
+        class="flex gap-x-2 items-center nav-link px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+        Report
+        <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_209_324)">
+              <path
+                d="M7.85742 0.0527325C6.39844 0.260155 5.17148 0.717186 4.00781 1.49765C1.80352 2.9707 0.400781 5.23828 0.0527344 7.88555C-0.0175781 8.42695 -0.0175781 9.56601 0.0527344 10.1004C0.326953 12.2062 1.24102 14.0344 2.73867 15.4793C3.90586 16.6008 5.18555 17.3215 6.73242 17.7187C7.62891 17.9508 7.90664 17.9824 9 17.9824C10.0371 17.9824 10.3359 17.9508 11.1094 17.7645C14.3438 16.9875 16.8996 14.4703 17.7328 11.25C17.9402 10.4414 17.9789 10.0758 17.9824 9.01758C17.9824 8.22656 17.9684 7.95586 17.9191 7.64648C17.6027 5.7375 16.7977 4.11328 15.5004 2.76328C14.1223 1.32891 12.4488 0.446482 10.4625 0.0984364C9.90703 0.00351334 8.40234 -0.0246105 7.85742 0.0527325ZM9.63984 3.10781C9.87539 3.22031 10.0934 3.45234 10.1531 3.64922C10.1777 3.72656 10.1953 3.92695 10.1953 4.09922C10.1953 4.51758 9.92109 11.1586 9.89648 11.3379C9.85078 11.6578 9.55547 12.0094 9.25313 12.0937C8.77852 12.2238 8.28633 11.9566 8.1457 11.4855C8.1 11.3414 8.05781 10.5891 7.94531 7.875C7.78359 3.94101 7.78008 3.83555 7.87148 3.63867C7.95937 3.4418 8.10352 3.28359 8.28281 3.17812C8.54648 3.02344 8.70469 2.98828 9.08789 2.99883C9.38672 3.00937 9.47109 3.02344 9.63984 3.10781ZM9.27773 13.2398C9.41133 13.2785 9.51328 13.3418 9.63281 13.4613C10.0793 13.9078 9.97031 14.6145 9.4043 14.9168C9.20742 15.0223 8.79258 15.0223 8.5957 14.9168C8.02969 14.6145 7.9207 13.9078 8.36719 13.4613C8.62383 13.2047 8.91914 13.1309 9.27773 13.2398Z"
+                fill="#FF0909" />
+              <path
+                d="M8.71895 3.02694C8.31113 3.1078 7.95606 3.3996 7.85762 3.73358C7.8084 3.91288 7.81543 4.17304 7.95957 7.65702C8.11074 11.2113 8.12129 11.3976 8.19512 11.5664C8.27598 11.7598 8.4834 11.9672 8.66973 12.0445C8.8209 12.1078 9.17949 12.1078 9.33067 12.0445C9.51699 11.9672 9.72442 11.7598 9.80528 11.5664C9.8791 11.3976 9.88965 11.2113 10.0373 7.64999C10.1252 5.58983 10.185 3.85311 10.1709 3.78983C10.0654 3.23085 9.41856 2.88983 8.71895 3.02694Z"
+                fill="#ECECEC" />
+              <path
+                d="M8.62724 13.3031C8.41982 13.398 8.21942 13.6195 8.16317 13.8129C8.09989 14.0133 8.11396 14.3051 8.18778 14.4668C8.26864 14.6426 8.4831 14.85 8.65536 14.9238C8.83466 14.9976 9.19325 14.9906 9.36903 14.9098C9.55185 14.8254 9.79442 14.5617 9.84013 14.393C9.88935 14.2137 9.88935 13.9816 9.83661 13.8129C9.74169 13.4859 9.36552 13.2187 8.99989 13.2187C8.86982 13.2187 8.74677 13.2469 8.62724 13.3031Z"
+                fill="#ECECEC" />
+            </g>
+            <defs>
+              <clipPath id="clip0_209_324">
+                <rect width="18" height="18" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </button>
     </ul>
 
 
@@ -97,6 +120,7 @@
     <div id="menu"
       class="hidden md:hidden bg-white absolute top-0 duration-500 transiation-linear left-0 w-full h-screen flex flex-col justify-center items-center gap-6 z-20 text-lg font-medium">
       <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About Us</a>
       <a href="#" class="nav-link">50% Off</a>
       <a href="#" class="nav-link">Combo sets</a>
       <!-- <button id="openModal"
@@ -104,10 +128,28 @@
         Report
       </button> -->
       <!-- Report Button -->
-<button id="openModal"
-  class="flex gap-x-2 items-center nav-link px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
-  Report
-</button>
+      <button id="openModal"
+        class="flex gap-x-2 items-center nav-link px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+        Report <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_209_324)">
+              <path
+                d="M7.85742 0.0527325C6.39844 0.260155 5.17148 0.717186 4.00781 1.49765C1.80352 2.9707 0.400781 5.23828 0.0527344 7.88555C-0.0175781 8.42695 -0.0175781 9.56601 0.0527344 10.1004C0.326953 12.2062 1.24102 14.0344 2.73867 15.4793C3.90586 16.6008 5.18555 17.3215 6.73242 17.7187C7.62891 17.9508 7.90664 17.9824 9 17.9824C10.0371 17.9824 10.3359 17.9508 11.1094 17.7645C14.3438 16.9875 16.8996 14.4703 17.7328 11.25C17.9402 10.4414 17.9789 10.0758 17.9824 9.01758C17.9824 8.22656 17.9684 7.95586 17.9191 7.64648C17.6027 5.7375 16.7977 4.11328 15.5004 2.76328C14.1223 1.32891 12.4488 0.446482 10.4625 0.0984364C9.90703 0.00351334 8.40234 -0.0246105 7.85742 0.0527325ZM9.63984 3.10781C9.87539 3.22031 10.0934 3.45234 10.1531 3.64922C10.1777 3.72656 10.1953 3.92695 10.1953 4.09922C10.1953 4.51758 9.92109 11.1586 9.89648 11.3379C9.85078 11.6578 9.55547 12.0094 9.25313 12.0937C8.77852 12.2238 8.28633 11.9566 8.1457 11.4855C8.1 11.3414 8.05781 10.5891 7.94531 7.875C7.78359 3.94101 7.78008 3.83555 7.87148 3.63867C7.95937 3.4418 8.10352 3.28359 8.28281 3.17812C8.54648 3.02344 8.70469 2.98828 9.08789 2.99883C9.38672 3.00937 9.47109 3.02344 9.63984 3.10781ZM9.27773 13.2398C9.41133 13.2785 9.51328 13.3418 9.63281 13.4613C10.0793 13.9078 9.97031 14.6145 9.4043 14.9168C9.20742 15.0223 8.79258 15.0223 8.5957 14.9168C8.02969 14.6145 7.9207 13.9078 8.36719 13.4613C8.62383 13.2047 8.91914 13.1309 9.27773 13.2398Z"
+                fill="#FF0909" />
+              <path
+                d="M8.71895 3.02694C8.31113 3.1078 7.95606 3.3996 7.85762 3.73358C7.8084 3.91288 7.81543 4.17304 7.95957 7.65702C8.11074 11.2113 8.12129 11.3976 8.19512 11.5664C8.27598 11.7598 8.4834 11.9672 8.66973 12.0445C8.8209 12.1078 9.17949 12.1078 9.33067 12.0445C9.51699 11.9672 9.72442 11.7598 9.80528 11.5664C9.8791 11.3976 9.88965 11.2113 10.0373 7.64999C10.1252 5.58983 10.185 3.85311 10.1709 3.78983C10.0654 3.23085 9.41856 2.88983 8.71895 3.02694Z"
+                fill="#ECECEC" />
+              <path
+                d="M8.62724 13.3031C8.41982 13.398 8.21942 13.6195 8.16317 13.8129C8.09989 14.0133 8.11396 14.3051 8.18778 14.4668C8.26864 14.6426 8.4831 14.85 8.65536 14.9238C8.83466 14.9976 9.19325 14.9906 9.36903 14.9098C9.55185 14.8254 9.79442 14.5617 9.84013 14.393C9.88935 14.2137 9.88935 13.9816 9.83661 13.8129C9.74169 13.4859 9.36552 13.2187 8.99989 13.2187C8.86982 13.2187 8.74677 13.2469 8.62724 13.3031Z"
+                fill="#ECECEC" />
+            </g>
+            <defs>
+              <clipPath id="clip0_209_324">
+                <rect width="18" height="18" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </button>
 
     </div>
 
@@ -186,7 +228,7 @@
     </div>
 
     <!-- Hamburger Button -->
-     
+
     <button id="menu-btn" class="block md:hidden focus:outline-none z-[40]">
       <!-- Hamburger Icon -->
       <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-black" fill="none" viewBox="0 0 24 24"
@@ -209,15 +251,14 @@
   <!------------------------------------- HEADER --------------------------------------->
   <header class="relative z-10 bg-pink">
     <img src="./assets/images/webp/skirt-2.webp" alt="skirt ellipse"
-      class="absolute  z-0 w-[190px] h-[233px] top-0 start-0"> <img src="./assets/images/webp/skirt-1.webp"
-      alt="skirt ellipse" class="absolute z-0 w-[190px] h-[228px] top-0 start-[40%]"> <img
-      src="./assets/images/webp/skirt-3.webp" alt="skirt ellipse"
-      class="absolute z-0 w-[171px] h-[273px] bottom-0 start-[0%]"> <img src="./assets/images/webp/skirt-4.webp"
-      alt="skirt ellipse" class="absolute z-0 w-[171px] h-[273px] bottom-[-10%] start-[40%]">
-    <div
-      class="container mx-auto px-4 relative z-10 flex max-sm:flex-col md:justify-between md:items-center">
-
-
+      class="absolute  z-0 w-[190px] h-[233px] top-0 start-0">
+    <img src="./assets/images/webp/skirt-1.webp" alt="skirt ellipse"
+      class="absolute z-0 w-[190px] h-[228px] top-0 start-[40%] max-md:hidden">
+    <img src="./assets/images/webp/skirt-3.webp" alt="skirt ellipse"
+      class="absolute z-0 w-[171px] h-[273px] bottom-0 start-[0%] max-md:hidden">
+    <img src="./assets/images/webp/skirt-4.webp" alt="skirt ellipse"
+      class="absolute z-0 w-[290px] h-[243px] bottom-[-10%] start-[40%] max-md:hidden">
+    <div class="container mx-auto px-4 relative z-10 flex max-sm:flex-col md:justify-between md:items-center">
       <!-- Text Content -->
       <div class="text-white max-w-[480px]  py-20 sm:py-[141px]">
         <p class="italic text-lg font-medium mb-3">Award-Winning</p>
@@ -236,646 +277,632 @@
 
       </div>
       <div class="flex gap-x-5 items-center min-[1400px]:translate-x-[22%]">
-      <!-- Left Vertical Slider -->
-      <div class="slider max-lg:hidden  w-[238px] xl:w-[250px] ">
+        <!-- Left Vertical Slider -->
+        <div class="slider max-lg:hidden  w-[238px] xl:w-[250px] ">
 
-        <div class="slider-track ">
+          <div class="slider-track ">
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-1.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-1.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-2.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-2.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-3.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-3.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-4.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-4.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-5.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-5.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-6.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-6.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-7.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-7.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
 
 
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-8.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-8.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right Vertical Slider -->
-      <div class="slider w-full sm:w-[238px] xl:w-[250px]">
-        <div class="slider-track reverse max-md:gap-x-3">
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-9.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+        <!-- Right Vertical Slider -->
+        <div class="slider w-full sm:w-[238px] xl:w-[250px]">
+          <div class="slider-track reverse max-md:gap-x-3">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-9.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-10.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-10.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-1.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-1.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-2.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-2.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-3.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-3.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-4.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-4.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-5.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-5.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
-          </div>
-          <div class="relative inline-block">
-            <!-- Image -->
-            <img src="./assets/images/webp/slide-6.webp"
-              class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
+            <div class="relative inline-block">
+              <!-- Image -->
+              <img src="./assets/images/webp/slide-6.webp"
+                class="max-sm:max-h-[300px] h-[280px] object-cover object-top rounded-[16px]" alt="dress">
 
-            <!-- Rating Card -->
-            <div
-              class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
-              <a href="#" class="relative z-10">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
-                    fill="#FFB703" />
-                </svg>
-              </a>
-              <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              <!-- Rating Card -->
+              <div
+                class="absolute top-[2.5%] left-[3%] rounded-full w-[73px] h-[36px] bg-[#fafafa]/10 flex justify-center items-center">
+                <a href="#" class="relative z-10">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.854 16.5L5.20817 10.6458L0.666504 6.70834L6.6665 6.1875L8.99984 0.666672L11.3332 6.1875L17.3332 6.70834L12.7915 10.6458L14.1457 16.5L8.99984 13.3958L3.854 16.5Z"
+                      fill="#FFB703" />
+                  </svg>
+                </a>
+                <p class="text-white relative z-10 font-normal text-base lh-100 ml-1">4.9</p>
+              </div>
             </div>
+
+
           </div>
-
-
         </div>
-      </div>
       </div>
     </div>
   </header>
 
   <!------------------------------------- combo --------------------------------------->
-    <section class=" py-16  md:py-[100px] bg-[#f4f4f4] ">
-        <div class="container px-4 mx-auto  ">
-            <p class="text-base lg:text-lg lh-100 text-black mb-2 md:mb-5 font-medium">Perfect Pairing</p>
-            <h2 class="text-3xl !leading-[120%] lg:text-[50px] text-custom-black font-medium mb-5 md:mb-[50px]">Our
-                combo
-                sets</h2>
+  <section class=" py-16  md:py-[100px] bg-[#f4f4f4] ">
+    <div class="container px-4 mx-auto  ">
+      <p class="text-base lg:text-lg lh-100 text-black mb-2 md:mb-5 font-medium">Perfect Pairing</p>
+      <h2 class="text-3xl !leading-[120%] lg:text-[50px] text-custom-black font-medium mb-5 md:mb-[50px]">Our
+        combo
+        sets</h2>
 
-            <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
 
-                <!-- Left thumbnails + Main Image -->
-                <div class="flex gap-4 col-span-1">
-                    <!-- Thumbnails -->
-                    <div class="flex flex-col gap-3 md:gap-6 thumbnails">
-                        <img src="./assets/images/webp/combo-1.png"
-                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-black cursor-pointer"
-                            data-index="0">
-                        <img src="./assets/images/webp/combo-kurta-2.png"
-                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-                            data-index="1">
-                        <img src="./assets/images/webp/combo-kurta-3.png"
-                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-                            data-index="2">
-                        <img src="./assets/images/webp/combo-kurta-4.png"
-                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-                            data-index="3">
-                        <img src="./assets/images/webp/combo-kurta-5.png"
-                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-                            data-index="4">
-                        <img src="./assets/images/webp/combo-kurta-6.png"
-                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-                            data-index="5">
-                    </div>
+        <!-- Left thumbnails + Main Image -->
+        <div class="flex gap-4 col-span-1">
+          <!-- Thumbnails -->
+          <div class="flex flex-col gap-3 md:gap-6 thumbnails">
+            <img src="./assets/images/webp/combo-1.png"
+              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-black cursor-pointer"
+              data-index="0">
+            <img src="./assets/images/webp/combo-kurta-2.png"
+              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+              data-index="1">
+            <img src="./assets/images/webp/combo-kurta-3.png"
+              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+              data-index="2">
+            <img src="./assets/images/webp/combo-kurta-4.png"
+              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+              data-index="3">
+            <img src="./assets/images/webp/combo-kurta-5.png"
+              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+              data-index="4">
+            <img src="./assets/images/webp/combo-kurta-6.png"
+              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+              data-index="5">
+          </div>
 
-                    <!-- Main Image -->
-                    <div class="relative w-full rounded-xl">
-                        <img id="currentImage" src="./assets/images/webp/combo-1.png"
-                            class="md:max-w-[470px] rounded-xl max-h-[620px] w-full h-full object-cover">
-                        <div class="flex justify-between items-center max-w-[470px]">
-                            <p class="max-w-[200px] text-black text-base mt-6 lh-160">Slide left/right to view more
-                                pictures of combo</p>
-                            <!-- Arrows -->
-                            <div class="gap-x-5 md:gap-x-[56px] flex items-center ">
-                                <button id="prevBtn"
-                                    class=" border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
-                                        width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176"
-                                            stroke-linejoin="round" />
-                                        <path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5"
-                                            stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button id="nextBtn"
-                                    class="border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
-                                        width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176"
-                                            stroke-linejoin="round" />
-                                        <path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5"
-                                            stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <!-- Discount Badge -->
-                        <div
-                            class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white absolute top-[25%] xl:top-[10%] end-[10%] xl:end-[17%] z-50">
-                            <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50%
-                                <br />
-                                <span class="text-grey">Off</span>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Side: Combo Options -->
-                <div class="space-y-6 max-md:pt-14">
-                    <h3 class="text-lg font-semibold">Best selling Combo sets with 50% off</h3>
-
-                    <!-- Price Grid -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-sm">
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 set</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    40 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">550rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    88 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">800rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    89 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">1100rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    40 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">1400rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    15 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">1700rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    45 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2000rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    33 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2300rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    54 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2600rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    35 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2900rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    23 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">3200rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    79 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">3500rs</p>
-                        </div>
-                        <div
-                            class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
-                            <div class="flex flex-col items-start">
-                                <p
-                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
-                                    1 sets</p>
-                                <p
-                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
-                                    93 sets left
-                                </p>
-
-                            </div>
-                            <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
-                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">3800rs</p>
-                        </div>
-
-                    </div>
-
-                    <!-- Buy Button -->
-                    <button class="w-full py-3 bg-black text-white font-semibold hover:bg-white border hover:border hover:border-black hover:text-black hover:shadow-light duration-500 rounded-full">Buy Now</button>
-
-                    <!-- Fabric -->
-                    <div>
-                        <h4 class="font-semibold text-[32px] text-custom-black md:mb-2 bricolage">fabric</h4>
-                        <p class="text-custom-black mb-2 text-base">cotton mixed and fits for all seasons</p>
-                    </div>
-
-                    <!-- Note -->
-                    <div>
-                        <h4 class="font-semibold text-[32px] bricolage !leading-[120%] mb-3">note</h4>
-                        <ul class="text-sm text-gray-700 space-y-2 ">
-                            <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
-                                            fill="#010101" />
-                                    </svg>
-                                </span>
-                                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Online
-                                    Payments
-                                    Accepted</p>
-                            </div>
-                            <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
-                                            fill="#010101" />
-                                    </svg>
-                                </span>
-                                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Cash on
-                                    delivery
-                                    with 200rs
-                                    advance confirmation (Dependable)</p>
-                            </div>
-                            <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
-                                            fill="#010101" />
-                                    </svg>
-                                </span>
-                                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Return and
-                                    Refund
-                                    Policy
-                                    valid for 7 days</p>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
+          <!-- Main Image -->
+          <div class="relative w-full rounded-xl">
+            <img id="currentImage" src="./assets/images/webp/combo-1.png"
+              class="md:max-w-[470px] rounded-xl max-h-[620px] w-full h-full object-cover">
+            <div class="flex justify-between items-center max-w-[470px]">
+              <p class="max-w-[200px] text-black text-base mt-6 lh-160">Slide left/right to view more
+                pictures of combo</p>
+              <!-- Arrows -->
+              <div class="gap-x-5 md:gap-x-[56px] flex items-center ">
+                <button id="prevBtn"
+                  class=" border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
+                    width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
+                    <path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5" stroke="black"
+                      stroke-width="2.00176" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button id="nextBtn"
+                  class="border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
+                    width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
+                    <path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5" stroke="black"
+                      stroke-width="2.00176" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
             </div>
-    </section>
+
+
+            <!-- Discount Badge -->
+            <div
+              class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white absolute top-[25%] xl:top-[10%] end-[10%] xl:end-[17%] z-50">
+              <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50%
+                <br />
+                <span class="text-grey">Off</span>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Combo Options -->
+        <div class="space-y-6 max-md:pt-14">
+          <h3 class="text-lg font-semibold">Best selling Combo sets with 50% off</h3>
+
+          <!-- Price Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-sm">
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  1 set</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  40 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">550rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  2 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  88 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">800rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  3 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  89 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">1100rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  4 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  40 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">1400rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  5 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  15 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">1700rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  6 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  45 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2000rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  7 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  33 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2300rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  8 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  54 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2600rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  9 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  35 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">2900rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  10 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  23 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">3200rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  11 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  79 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">3500rs</p>
+            </div>
+            <div
+              class="border rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+              <div class="flex flex-col items-start">
+                <p class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                  12 sets</p>
+                <p
+                  class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                  93 sets left
+                </p>
+
+              </div>
+              <span class="h-6 w-[2px] bg-pink group-hover:bg-white"></span>
+              <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">3800rs</p>
+            </div>
+
+          </div>
+
+          <!-- Buy Button -->
+          <button
+            class="w-full py-3 bg-black text-white font-semibold hover:bg-white border hover:border hover:border-black hover:text-black hover:shadow-light duration-500 rounded-full">Buy
+            Now</button>
+
+          <!-- Fabric -->
+          <div>
+            <h4 class="font-semibold text-[32px] text-custom-black md:mb-2 bricolage">fabric</h4>
+            <p class="text-custom-black mb-2 text-base">cotton mixed and fits for all seasons</p>
+          </div>
+
+          <!-- Note -->
+          <div>
+            <h4 class="font-semibold text-[32px] bricolage !leading-[120%] mb-3">note</h4>
+            <ul class="text-sm text-gray-700 space-y-2 ">
+              <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
+                      fill="#010101" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Online
+                  Payments
+                  Accepted</p>
+              </div>
+              <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
+                      fill="#010101" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Cash on
+                  delivery
+                  with 200rs
+                  advance confirmation (Dependable)</p>
+              </div>
+              <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
+                      fill="#010101" />
+                  </svg>
+                </span>
+                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Return and
+                  Refund
+                  Policy
+                  valid for 7 days</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
   <!------------------------------------- OUR COLLECTION --------------------------------------->
   <section class="py-16 md:py-20 lg:py-24">
     <div class="container mx-auto max-xl:px-4">
@@ -1179,122 +1206,110 @@
   </section>
 
   <!----------------------------------------- CUSTOMER ----------------------------------------->
-   <section class="max-w-[1342px] ms-auto pt-10 md:pt-16 lg:pt-[120px] ps-4">
-        <div class="flex justify-between items-center mb-6">
-            <h2 class="text-3xl font-bold">Customer Testimonial</h2>
-            <div class="flex gap-3 pe-4">
-                <!-- Custom Prev Button -->
-                <div
-                    class="swiper-button-prev !static !w-11 !h-11 !rounded-full !bg-white !shadow-md flex justify-center items-center hover:!bg-black transition">
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="17" cy="17" r="16" transform="rotate(-90 17 17)" stroke="#AFAFAF"
-                            stroke-width="2.00176" stroke-linejoin="round" />
-                        <path d="M10.5 17.5L23.5 17.5" stroke="#AFAFAF" stroke-width="2.00176"
-                            stroke-linejoin="round" />
-                        <path d="M15.5 11.5C13.1569 13.8431 11.8431 15.1569 9.5 17.5L15.5 23.5" stroke="#AFAFAF"
-                            stroke-width="2.00176" stroke-linejoin="round" />
-                    </svg>
+  <section class="max-w-[1300px] mx-aut lg:ms-auto min-[1441px]:mx-auto pt-10 md:pt-16 lg:pt-[120px] ps-4">
+    <div class="flex justify-between items-center mb-6 pe-4">
+      <h2 class="text-3xl font-bold">Customer Testimonial</h2>
+      <div class="flex gap-3 max-sm:mt-10">
+        <!-- Prev Button -->
+        <div
+          class="swiper-button-prev !static max-sm:w-8 max-sm:h-8 w-11 h-11 !rounded-full !bg-white !shadow-md flex justify-center items-center hover:!bg-black transition">
+         <svg class="size-[34px] max-sm:size-[30px]" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="17" cy="17" r="16" transform="rotate(-90 17 17)" stroke="#AFAFAF" stroke-width="2.00176"
+              stroke-linejoin="round" />
+            <path d="M10.5 17.5L23.5 17.5" stroke="#AFAFAF" stroke-width="2.00176" stroke-linejoin="round" />
+            <path d="M15.5 11.5C13.1569 13.8431 11.8431 15.1569 9.5 17.5L15.5 23.5" stroke="#AFAFAF"
+              stroke-width="2.00176" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <!-- Next Button -->
+        <div
+          class="swiper-button-next !static max-sm:w-8 max-sm:h-8 w-11 h-11 !rounded-full !bg-white !shadow-md flex justify-center items-center hover:!bg-black transition">
+        <svg class="size-[34px] max-sm:size-[30px]" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="17" cy="17" r="16" transform="rotate(-90 17 17)" stroke="#AFAFAF" stroke-width="2.00176"
+              stroke-linejoin="round" />
+            <path d="M22.5 17.5L9.50002 17.5" stroke="#AFAFAF" stroke-width="2.00176" stroke-linejoin="round" />
+            <path d="M17.5 11.5C19.8431 13.8431 21.1569 15.1569 23.5 17.5L17.5 23.5" stroke="#AFAFAF"
+              stroke-width="2.00176" stroke-linejoin="round" />
+          </svg>
 
-                </div>
-                <!-- Custom Next Button -->
-                <div
-                    class="swiper-button-next !static !w-11 !h-11 !rounded-full !bg-white !shadow-md flex justify-center items-center hover:!bg-black transition">
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="17" cy="17" r="16" transform="rotate(-90 17 17)" stroke="#AFAFAF"
-                            stroke-width="2.00176" stroke-linejoin="round" />
-                        <path d="M22.5 17.5L9.50002 17.5" stroke="#AFAFAF" stroke-width="2.00176"
-                            stroke-linejoin="round" />
-                        <path d="M17.5 11.5C19.8431 13.8431 21.1569 15.1569 23.5 17.5L17.5 23.5" stroke="#AFAFAF"
-                            stroke-width="2.00176" stroke-linejoin="round" />
-                    </svg>
+        </div>
+      </div>
+    </div>
 
-                </div>
+    <!-- Swiper -->
+    <div class="swiper overflow-hidde">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/test-1.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">May 8, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Ekta</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">"I bought a floral kurti set and absolutely loved it! The fabric is light, breathable, and perfect for this weather. What I really liked is how the colors looked exactly like the photos, which usually doesn’t happen when buying online. My friends instantly asked me where I got it from, and I couldn’t be happier with my purchase."</p>
             </div>
+          </div>
         </div>
 
-        <!-- Swiper Container -->
-        <div class="swiper overflow-hidden">
-            <div class="swiper-wrapper">
-
-                <!-- Text Card -->
-                <div class="swiper-slide !w-[267px]">
-                    <div class="bg-pink-500 text-white p-6 rounded-lg h-[359px] flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-semibold">Alice Johnson</h3>
-                            <p class="text-sm opacity-80 mb-4">Ceo & Founder</p>
-                                                    </div>
-
-                            <p>The Yellow Edit wrap skirt is pure sunshine — light, flattering, and perfect for
-                                getaways. It breezed through my Goa trip with endless compliments!</p>
-                    </div>
-                </div>
-
-                <!-- Image Card -->
-                <div class="swiper-slide !w-[267px]">
-                    <div class="rounded-lg overflow-hidden relative h-[359px]">
-                        <img src="./assets/images/webp/test-1.png" alt="customer"
-                            class="w-full h-full object-cover rounded-lg" />
-                        <div class="p-2 absolute bottom-[3%] start-[4%]">
-                            <p class="font-semibold text-base text-white">Emilly</p>
-                            <p class="text-sm text-[#fafafa]">Chief Financial Officer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Repeat More Slides -->
-                <div class="swiper-slide !w-[267px]">
-                    <div class="rounded-lg overflow-hidden relative h-[359px]">
-                        <img src="./assets/images/webp/test-2.png" alt="customer"
-                            class="w-full h-full object-cover rounded-lg" />
-                        <div class="p-2 absolute bottom-[3%] start-[4%]">
-                            <p class="font-semibold text-base text-white">Emilly</p>
-                            <p class="text-sm text-[#fafafa]">Chief Financial Officer</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat More Slides -->
-                <div class="swiper-slide !w-[267px]">
-                    <div class="rounded-lg overflow-hidden relative h-[359px]">
-                        <img src="./assets/images/webp/test-3.png" alt="customer"
-                            class="w-full h-full object-cover rounded-lg" />
-                        <div class="p-2 absolute bottom-[3%] start-[4%]">
-                            <p class="font-semibold text-base text-white">Emilly</p>
-                            <p class="text-sm text-[#fafafa]">Chief Financial Officer</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat More Slides -->
-                <div class="swiper-slide !w-[267px]">
-                    <div class="rounded-lg overflow-hidden relative h-[359px]">
-                        <img src="./assets/images/webp/test-4.png" alt="customer"
-                            class="w-full h-full object-cover rounded-lg" />
-                        <div class="p-2 absolute bottom-[3%] start-[4%]">
-                            <p class="font-semibold text-base text-white">Emilly</p>
-                            <p class="text-sm text-[#fafafa]">Chief Financial Officer</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat More Slides -->
-                <div class="swiper-slide !w-[267px]">
-                    <div class="rounded-lg overflow-hidden relative h-[359px]">
-                        <img src="./assets/images/webp/collection-1.png" alt="customer"
-                            class="w-full h-full object-cover rounded-lg" />
-                        <div class="p-2 absolute bottom-[3%] start-[4%]">
-                            <p class="font-semibold text-base text-white">Emilly</p>
-                            <p class="text-sm text-[#fafafa]">Chief Financial Officer</p>
-                        </div>
-                    </div>
-                </div>
-              
-
+        <!-- Slide 2 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/test-2.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">June 1, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Meena</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> 
+ The western dress I ordered turned out even better than the pictures. It hugged my body perfectly without
+ being too tight, and the fabric feels so premium. I wore it for my cousin's birthday party and received so many
+ compliments. Definitely one of the best dresses I've bought online.</p>
             </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/test-3.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">July 14, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Riya</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I tried the crop top and pant combo set - and it was worth every penny! The fitting was just right, and the
+ colors are vibrant yet subtle. It's one of those outfits that you can wear both casually and on outings, which
+ makes it super versatile. Really glad I found this collection.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/test-4.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">Aug 20, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Anjali</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The embroidered kurti I received is so elegant and classy. It's simple enough for casual wear yet perfect for
+ small family gatherings too. The stitching is neat, and the finishing feels professional. I've already washed it
+ twice and it still looks brand new</p>
+            </div>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </div>
+  </section>
+
 
 
   <!----------------------------------------- GET OFF ----------------------------------------->
   <section class="py-16 md:py-20 lg:py-[120px] px-4">
-    <div class="max-w-[1200px] mx-auto bg-light-white rounded-xl shadow-light py-20 lg:py-[114px] relative">
+    <div class="max-w-[1140px] mx-auto bg-light-white rounded-xl shadow-light py-20 lg:py-[114px] relative">
       <img src="./assets/images/webp/offer-product-1.webp"
         class="absolute top-[10%] max-md:hidden start-[4%] md:h-[150px] lg:h-[210px] md:w-[140px] lg:w-[206px]"
         alt="offer product">
@@ -1421,44 +1436,44 @@
     });
   </script>
   <script>
-  const openBtn = document.getElementById("openModal");
-  const closeBtn = document.getElementById("closeModal");
-  const modal = document.getElementById("modal");
-  const body = document.body;
-  const form = document.getElementById("complaintForm");
+    const openBtn = document.getElementById("openModal");
+    const closeBtn = document.getElementById("closeModal");
+    const modal = document.getElementById("modal");
+    const body = document.body;
+    const form = document.getElementById("complaintForm");
 
-  openBtn.addEventListener("click", () => {
-    modal.classList.remove("hidden");
-    body.classList.add("overflow-hidden");
-  });
+    openBtn.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      body.classList.add("overflow-hidden");
+    });
 
-  closeBtn.addEventListener("click", () => {
-    modal.classList.add("hidden");
-    body.classList.remove("overflow-hidden");
-  });
-
-  // Close modal on outside click
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
+    closeBtn.addEventListener("click", () => {
       modal.classList.add("hidden");
       body.classList.remove("overflow-hidden");
-    }
-  });
+    });
 
-  // Form validation
-  form.addEventListener("submit", (e) => {
-    if (!form.checkValidity()) {
-      e.preventDefault();
-      alert("Please fill all required fields correctly.");
-    } else {
-      e.preventDefault(); // prevent actual reload
-      alert("Complaint submitted successfully!");
-      modal.classList.add("hidden");
-      body.classList.remove("overflow-hidden");
-      form.reset();
-    }
-  });
-</script>
+    // Close modal on outside click
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+      }
+    });
+
+    // Form validation
+    form.addEventListener("submit", (e) => {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert("Please fill all required fields correctly.");
+      } else {
+        e.preventDefault(); // prevent actual reload
+        alert("Complaint submitted successfully!");
+        modal.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+        form.reset();
+      }
+    });
+  </script>
   <script>
     // Get current year dynamically
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -1477,91 +1492,91 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- 
+
 
   <script>
-  const dropdownBtn = document.getElementById("dropdownBtn");
-  const dropdownMenu = document.getElementById("dropdownMenu");
-  const selectedFlag = document.getElementById("selectedFlag");
-  const selectedText = document.getElementById("selectedText");
-  const dropdownItems = document.querySelectorAll(".dropdownItem");
+    const dropdownBtn = document.getElementById("dropdownBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const selectedFlag = document.getElementById("selectedFlag");
+    const selectedText = document.getElementById("selectedText");
+    const dropdownItems = document.querySelectorAll(".dropdownItem");
 
-  // Toggle dropdown
-  dropdownBtn.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("hidden");
-  });
-
-  // Handle selection
-  dropdownItems.forEach(item => {
-    item.addEventListener("click", () => {
-      const flag = item.getAttribute("data-flag");
-      const text = item.getAttribute("data-text");
-
-      selectedFlag.src = flag;
-      selectedText.textContent = text;
-
-      dropdownMenu.classList.add("hidden"); // close after select
+    // Toggle dropdown
+    dropdownBtn.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("hidden");
     });
-  });
 
-  // Close when clicking outside
-  document.addEventListener("click", (event) => {
-    if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
-      dropdownMenu.classList.add("hidden");
+    // Handle selection
+    dropdownItems.forEach(item => {
+      item.addEventListener("click", () => {
+        const flag = item.getAttribute("data-flag");
+        const text = item.getAttribute("data-text");
+
+        selectedFlag.src = flag;
+        selectedText.textContent = text;
+
+        dropdownMenu.classList.add("hidden"); // close after select
+      });
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+  </script>
+  <script>
+    const images = [
+      "./assets/images/webp/combo-1.png",
+      "./assets/images/webp/combo-kurta-2.png",
+      "./assets/images/webp/combo-kurta-3.png",
+      "./assets/images/webp/combo-kurta-4.png",
+      "./assets/images/webp/combo-kurta-5.png",
+      "./assets/images/webp/combo-kurta-6.png"
+    ];
+
+    let currentIndex = 0;
+    const currentImage = document.getElementById("currentImage");
+
+    function updateImage(index) {
+      currentImage.src = images[index];
+      document.querySelectorAll("[data-index]").forEach(img => img.classList.remove("border-black"));
+      document.querySelector(`[data-index="${index}"]`).classList.add("border-black");
+      currentIndex = index;
     }
-  });
-</script>
- <script>
-        const images = [
-            "./assets/images/webp/combo-1.png",
-            "./assets/images/webp/combo-kurta-2.png",
-            "./assets/images/webp/combo-kurta-3.png",
-            "./assets/images/webp/combo-kurta-4.png",
-            "./assets/images/webp/combo-kurta-5.png",
-            "./assets/images/webp/combo-kurta-6.png"
-        ];
 
-        let currentIndex = 0;
-        const currentImage = document.getElementById("currentImage");
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      let newIndex = (currentIndex + 1) % images.length;
+      updateImage(newIndex);
+    });
 
-        function updateImage(index) {
-            currentImage.src = images[index];
-            document.querySelectorAll("[data-index]").forEach(img => img.classList.remove("border-black"));
-            document.querySelector(`[data-index="${index}"]`).classList.add("border-black");
-            currentIndex = index;
-        }
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      let newIndex = (currentIndex - 1 + images.length) % images.length;
+      updateImage(newIndex);
+    });
 
-        document.getElementById("nextBtn").addEventListener("click", () => {
-            let newIndex = (currentIndex + 1) % images.length;
-            updateImage(newIndex);
-        });
-
-        document.getElementById("prevBtn").addEventListener("click", () => {
-            let newIndex = (currentIndex - 1 + images.length) % images.length;
-            updateImage(newIndex);
-        });
-
-        document.querySelectorAll("[data-index]").forEach(img => {
-            img.addEventListener("click", () => {
-                updateImage(parseInt(img.dataset.index));
-            });
-        });
-    </script>
-     <script>
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: "auto",   // automatic responsive
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-    </script>
+    document.querySelectorAll("[data-index]").forEach(img => {
+      img.addEventListener("click", () => {
+        updateImage(parseInt(img.dataset.index));
+      });
+    });
+  </script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: "auto", // allow multiple slides
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
