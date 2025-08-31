@@ -72,6 +72,7 @@
 .text-light-grey {
   color: var(--light-grey);
 }
+
 .text-pink {
   color: var(--pink);
 }
@@ -84,7 +85,7 @@
   background-color: var(--pink);
 }
 
-.combo-card:hover{
+.combo-card:hover {
   background-color: var(--pink);
 }
 
@@ -187,34 +188,39 @@
 
 @media (max-width:640px) {
 
-  textarea{
+  textarea {
     font-size: 14px !important;
   }
-  input{
+
+  input {
     font-size: 14px !important;
   }
+
   .slider-track.reverse {
-  animation: scrollleft 8s linear infinite;
-}
+    animation: scrollleft 8s linear infinite;
+  }
+
   .slider-track img {
     min-width: 200px;
-}
-.slider {
-  overflow: hidden;
-  height: 610px;
-  /* position: relative; */
-}
+  }
+
+  .slider {
+    overflow: hidden;
+    height: 610px;
+    /* position: relative; */
+  }
 
   .slider-track {
     display: flex;
     flex-direction: row;
     animation: scrollleft 5s linear infinite;
   }
+
   .slider {
-  overflow: hidden;
-  height: 350px;
-  position: relative;
-}
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+  }
 
 
 }
@@ -223,7 +229,8 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: #d3d3d3; /* grey */
+  background: #d3d3d3;
+  /* grey */
   opacity: 1;
   border-radius: 4px !important;
   transition: all 0.3s ease;
@@ -231,43 +238,93 @@
 
 /* Active bullet style (pill shape) */
 .swiper-pagination-bullet-active {
-  width: 30px !important; /* makes it pill */
+  width: 30px !important;
+  /* makes it pill */
   height: 10px;
-  background: #000 !important; /* black */
+  background: #000 !important;
+  /* black */
   border-radius: 9px !important;
 }
 
 
 
 
-  .swiper-button-next, .swiper-button-prev {
-      background: white;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .swiper-button-next::after, .swiper-button-prev::after {
-      font-size: 16px;
-      color: black;
-    }
-      .swiper-button-next::after,
-        .swiper-button-prev::after {
-            content: "" !important;
-        }
+.swiper-button-next,
+.swiper-button-prev {
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-            .vertical-swiper {
-      height: 600px; /* Adjust height */
-      width: 250px;  /* Adjust width */
-    }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  color: black;
+}
 
-    /* .swiper-slide img {
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+
+.vertical-swiper {
+  height: 600px;
+  /* Adjust height */
+  width: 250px;
+  /* Adjust width */
+}
+
+/* .swiper-slide img {
       border-radius: 16px;
     } */
-     .light-pink{
-      box-shadow: 10px 14px 52.8px 0px #FF004329;
+.light-pink {
+  box-shadow: 10px 14px 52.8px 0px #FF004329;
 
-     }
+}
+.gradient-line {
+  display: inline-block;
+  width: 1px;                 /* Thin vertical line */
+  height: 40px;               /* Adjust height */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 67, 0) 0%,
+    rgba(255, 0, 67, 0.5) 46%,
+    rgba(255, 0, 67, 0) 100%
+  );
+}
+.selected {
+  border: 2px solid #ff0043 !important;
+  background-color: #ff0043 !important;
+  color: white !important;
+}
+
+.selected p {
+  color: white !important;
+}
+.selected span {
+   display: inline-block;
+  width: 1px;                 /* Thin vertical line */
+  height: 40px;               /* Adjust height */
+  background: linear-gradient(
+    180deg,
+    rgba(190, 180, 183, 0) 0%,
+    rgba(194, 184, 187, 0.5) 46%,
+    rgba(189, 185, 186, 0) 100%
+  );
+}
+
+.selected .bg-pink {
+  background-color: #ff527f !important;
+  border: 0.5px solid #ff89a8 !important;
+  color: white !important;
+}
+  .combo-card.selected {
+    border: 2px solid #ff0043;
+    background-color: #ff0043;
+    color: white;
+  }

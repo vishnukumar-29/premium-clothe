@@ -2,34 +2,381 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Testimonial</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Card Example</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Selected card styles */
+        .selected {
+            border: 2px solid #ff0043 !important;
+            background-color: #ff0043 !important;
+            color: white !important;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 p-10">
+    <section class=" py-16  md:py-[100px] bg-[#f4f4f4] ">
+        <div class="container px-4 mx-auto  ">
+            <p class="text-base lg:text-lg lh-100 text-black mb-2 md:mb-5 font-medium">Perfect Pairing</p>
+            <h2 class="text-3xl !leading-[120%] lg:text-[50px] text-custom-black font-medium mb-5 md:mb-[50px]">Our
+                combo
+                sets</h2>
 
- 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper", {
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      slidesPerView: "auto", // allow multiple slides
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+                <!-- Left thumbnails + Main Image -->
+                <div class="flex gap-4 col-span-1">
+                    <!-- Thumbnails -->
+                    <div class="flex flex-col gap-3 md:gap-6 thumbnails">
+                        <img src="./assets/images/webp/combo-1.png"
+                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-black cursor-pointer"
+                            data-index="0">
+                        <img src="./assets/images/webp/combo-kurta-2.png"
+                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+                            data-index="1">
+                        <img src="./assets/images/webp/combo-kurta-3.png"
+                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+                            data-index="2">
+                        <img src="./assets/images/webp/combo-kurta-4.png"
+                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+                            data-index="3">
+                        <img src="./assets/images/webp/combo-kurta-5.png"
+                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+                            data-index="4">
+                        <img src="./assets/images/webp/combo-kurta-6.png"
+                            class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+                            data-index="5">
+                    </div>
+
+                    <!-- Main Image -->
+                    <div class="relative w-full rounded-xl">
+                        <img id="currentImage" src="./assets/images/webp/combo-1.png"
+                            class="md:max-w-[470px] rounded-xl max-h-[620px] max-md:h-[480px] w-full h-full object-cover">
+                        <div class="flex justify-between items-center max-w-[470px]">
+                            <p class="max-w-[200px] text-black text-base mt-6 lh-160">Slide left/right to view more
+                                pictures of combo</p>
+                            <!-- Arrows -->
+                            <div class="gap-x-5 md:gap-x-[56px] flex items-center ">
+                                <button id="prevBtn"
+                                    class=" border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
+                                        width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5"
+                                            stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button id="nextBtn"
+                                    class="border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
+                                        width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5"
+                                            stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- Discount Badge -->
+                        <div
+                            class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white absolute top-[25%] xl:top-[10%] end-[10%] xl:end-[17%] z-50">
+                            <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50%
+                                <br />
+                                <span class="text-grey">Off</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Combo Options -->
+                <div class="space-y-6 max-md:pt-14">
+                    <h3 class="text-lg font-semibold">Best selling Combo sets with 50% off</h3>
+
+                    <!-- Price Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-sm">
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    1 set</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    40 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                550rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    2 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    88 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                800rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    3 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    89 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                1100rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    4 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    40 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                1400rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    5 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    15 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                1700rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    6 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    45 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                2000rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    7 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    33 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                2300rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    8 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    54 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                2600rs</p>
+                        </div>
+                        <div
+                            class="border combo-card rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    9 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    35 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                2900rs</p>
+                        </div>
+                        <div
+                            class="border rounded-lg combo-card max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    10 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    23 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                3200rs</p>
+                        </div>
+                        <div
+                            class="border combo-card rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    11 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    79 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                3500rs</p>
+                        </div>
+                        <div
+                            class="border combo-card rounded-lg max-h-[55px] p-2 flex justify-between group items-center cursor-pointer border border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043]  hover:text-white transition duration-300">
+                            <div class="flex flex-col items-start">
+                                <p
+                                    class="text-sm md:text-base text-custom-black group-hover:!text-white lh-100 font-medium">
+                                    12 sets</p>
+                                <p
+                                    class="text-[10px] text-white h-4 bg-pink text-white group-hover:bg-[#ff527f] group-hover:border group-hover:border-[.5px] group-hover:border-[#ff89a8] hover:text-white px-2 text-center !leading-[160%] rounded-full inline-block">
+                                    93 sets left
+                                </p>
+
+                            </div>
+                            <span class="gradient-line"></span>
+                            <p class="font-semibold text-base xl:text-[22px] group-hover:text-white text-[#333333]">
+                                3800rs</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Buy Button -->
+                    <!-- Buy Button -->
+                    <button id="payModalOpenBtn"
+                        class="w-full mt-5 py-3 bg-gray-400 text-white font-semibold rounded-full cursor-not-allowed"
+                        disabled>
+                        Buy Now
+                    </button>
+
+                    <!-- Fabric -->
+                    <div>
+                        <h4 class="font-semibold text-[32px] text-custom-black md:mb-2 bricolage">fabric</h4>
+                        <p class="text-custom-black mb-2 text-base">cotton mixed and fits for all seasons</p>
+                    </div>
+
+                    <!-- Note -->
+                    <div>
+                        <h4 class="font-semibold text-[32px] bricolage !leading-[120%] mb-3">note</h4>
+                        <ul class="text-sm text-gray-700 space-y-2 ">
+                            <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
+                                            fill="#010101" />
+                                    </svg>
+                                </span>
+                                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Online
+                                    Payments
+                                    Accepted</p>
+                            </div>
+                            <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
+                                            fill="#010101" />
+                                    </svg>
+                                </span>
+                                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Cash on
+                                    delivery
+                                    with 200rs
+                                    advance confirmation (Dependable)</p>
+                            </div>
+                            <div class="flex items-center gap-1"><span><svg class="size-5 md:size-6" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.6529 1.78617C21.581 1.81261 20.0428 3.51357 17.8517 5.9895C15.8275 8.27696 13.1633 11.2875 11.9314 12.6797C10.6995 14.0719 9.64676 15.2366 9.59201 15.2679C9.44862 15.3499 9.23004 15.3403 9.09016 15.2458C9.02355 15.2009 8.07879 14.352 6.99063 13.3594C5.69341 12.1761 4.91595 11.5008 4.73266 11.3981C3.62154 10.7755 2.2467 11.2082 1.70379 12.3514C1.38757 13.0173 1.39587 13.6785 1.7284 14.304C1.90671 14.6394 7.47626 21.502 7.80293 21.7889C8.40101 22.314 9.2861 22.4065 10.0608 22.0249C10.6073 21.7557 10.4301 22.0252 16.6829 11.9532C22.0344 3.33319 22.5175 2.53847 22.5162 2.35842C22.5131 1.91503 22.0813 1.62882 21.6529 1.78617Z"
+                                            fill="#010101" />
+                                    </svg>
+                                </span>
+                                <p class="text-sm md:text-base font-semibold text-custom-black opacity-70">Return and
+                                    Refund
+                                    Policy
+                                    valid for 7 days</p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script>
+        const cards = document.querySelectorAll(".combo-card");
+        const buyBtn1 = document.getElementById("payModalOpenBtn");
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                // Remove selection from all cards
+                cards.forEach(c => c.classList.remove("selected"));
+
+                // Add selection to clicked card
+                card.classList.add("selected");
+
+                // Enable Buy Now button
+                buyBtn1.disabled = false;
+                buyBtn1.classList.remove("bg-gray-400", "cursor-not-allowed");
+                buyBtn1.classList.add("bg-black", "hover:bg-white", "hover:text-black", "hover:border", "hover:border-black", "hover:shadow-light");
+            });
+        });
+    </script>
 
 </body>
+
 </html>
