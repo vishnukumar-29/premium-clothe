@@ -31,7 +31,8 @@
         <button id="dropdownBtn" class="flex items-center max-sm:gap-1 gap-2 px-3 py-2 ">
           <img id="selectedFlag" src="./assets/images/svg/uk.svg" alt="UK" class="w-5 h-5">
           <span id="selectedText">En</span>
-          <svg class="min-w-4 min-h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <svg class="min-w-4 min-h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
@@ -134,7 +135,7 @@
     <div id="modal"
       class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-5 sm:p-10 md:p-16 lg:p-20">
       <div
-        class="bg-white flex lg:items-center max-md:max-h-[650px] max-lg:max-h-[700px] max-lg:overflow-scroll max-lg:flex-col lg:justify-between rounded-2xl shadow-lg max-w-[1240px] lg:px-[70px] p-4 sm:p-10 lg:py-[110px] relative">
+        class="bg-white flex lg:items-center max-h-[90vh] max-lg:overflow-y-scroll  max-lg:flex-col lg:justify-between rounded-2xl shadow-lg max-w-[1240px] lg:px-[70px] p-4 sm:p-10 lg:py-[110px] relative">
         <!-- Close Button -->
         <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
 
@@ -241,10 +242,10 @@
         <p class="text-base mb-6">Discover timeless style with our curated collection. Ethically made, premium fabrics,
           and fast shipping. Shop now and elevate your wardrobe with effortless elegance.</p>
         <div class="max-sm:flex items-start justify-between">
-          <button
-            class="payModalOpenBtn hover:bg-white hover:text-black hover:shadow-xl duration-500 inline-block px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+          <a href="#combo"
+            class=" hover:bg-white hover:text-black hover:shadow-xl duration-500 inline-block px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
             Shop Now
-          </button>
+          </a>
           <div
             class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white sm:absolute top-[44%] min-[400px]:top-[38%] xl:top-[40%] start-[50%] xl:start-[57%] max-xl:hidden max-sm:flex z-50">
             <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50% <span
@@ -573,7 +574,7 @@
   </header>
 
   <!------------------------------------- combo --------------------------------------->
-  <section class=" py-16  md:py-[100px] bg-[#f4f4f4] ">
+  <section id="combo" class=" py-16  md:py-[100px] bg-[#f4f4f4] ">
     <div class="container px-4 mx-auto  ">
       <p class="text-base lg:text-lg lh-100 text-black mb-2 md:mb-5 font-medium">Perfect Pairing</p>
       <h2 class="text-3xl !leading-[120%] lg:text-[50px] text-custom-black font-medium mb-5 md:mb-[50px]">Our
@@ -586,7 +587,7 @@
         <div class="flex gap-4 col-span-1">
           <!-- Thumbnails -->
           <div class="flex flex-col gap-3 md:gap-6 thumbnails">
-            <img src="./assets/images/webp/combo-1.png"
+              <img src="./assets/images/webp/combo-kurta-5.png"
               class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-black cursor-pointer"
               data-index="0">
             <img src="./assets/images/webp/combo-kurta-2.png"
@@ -598,7 +599,7 @@
             <img src="./assets/images/webp/combo-kurta-4.png"
               class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
               data-index="3">
-            <img src="./assets/images/webp/combo-kurta-5.png"
+            <img src="./assets/images/webp/combo-kurta-7.jpg"
               class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
               data-index="4">
             <img src="./assets/images/webp/combo-kurta-6.png"
@@ -654,7 +655,7 @@
           <!-- Price Grid -->
           <div class="">
             <div id="comboCards" class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-sm">
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">1 set</p>
@@ -666,7 +667,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">550rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">2 sets</p>
@@ -678,7 +679,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">800rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">3 sets</p>
@@ -690,7 +691,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">1100rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">4 sets</p>
@@ -702,7 +703,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">1400rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">5 sets</p>
@@ -714,7 +715,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">1700rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">6 sets</p>
@@ -726,7 +727,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">2000rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">7 sets</p>
@@ -738,7 +739,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">2300rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">8 sets</p>
@@ -750,7 +751,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">2600rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">9 sets</p>
@@ -762,7 +763,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">1900rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">10 sets</p>
@@ -774,7 +775,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">3200rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">11 sets</p>
@@ -786,7 +787,7 @@
                 <span class="gradient-line "></span>
                 <p class="font-semibold text-base xl:text-[22px] group-hover:!text-white text-[#333333]">3500rs</p>
               </div>
-               <div
+              <div
                 class="combo-card border rounded-lg max-h-[55px] p-2 flex justify-between items-center cursor-pointer border-[#afafaf] hover:border-[#ff0043] hover:bg-[#ff0043] hover:text-white group transition duration-300">
                 <div class="flex flex-col items-start">
                   <p class="text-sm md:text-base font-medium">12 sets</p>
@@ -867,33 +868,16 @@
     <div class="container mx-auto max-xl:px-4">
       <!-- Section Title -->
       <p class="font-medium lh-100 font-inter text-black mb-2 md:mb-5 text-lg">Our Collection</p>
-      <p class="text-4xl lg:text-[50px] text-custom-black font-medium lh-120 bricolage mb-5">Shop by Style</p>
-
-      <!-- Category Tabs -->
-      <div class="flex max-lg:overflow-x-scroll md:scroll-none gap-x-6 mb-6 md:mb-8 xl:mb-12 items-center">
-        <a href="#" id="viewAllBtn1"
-          class="text-xl font-inter text-nowrap max-lg:mb-2 duration-300 font-normal lh-100 text-grey hover:text-black">ALL</a>
-        <a href="#"
-          class="text-xl font-inter text-nowrap max-lg:mb-2 duration-300 font-normal lh-100 text-grey hover:text-black">Dresses</a>
-        <a href="#"
-          class="text-xl font-inter text-nowrap max-lg:mb-2 duration-300 font-normal lh-100 text-grey hover:text-black">Workwear</a>
-        <a href="#"
-          class="text-xl font-inter text-nowrap max-lg:mb-2 duration-300 font-normal lh-100 text-grey hover:text-black">Lounge</a>
-        <a href="#"
-          class="text-xl font-inter text-nowrap max-lg:mb-2 duration-300 font-normal lh-100 text-grey hover:text-black">Accessories</a>
-        <a href="#"
-          class="text-xl font-inter text-nowrap max-lg:mb-2 duration-300 font-normal lh-100 text-grey hover:text-black">New
-          Arrivals</a>
-      </div>
+      <p class="text-4xl lg:text-[50px] text-custom-black font-medium lh-120 bricolage mb-5 md:mb-12">Shop by Style</p>
 
       <!-- Products Grid -->
       <div id="product-container" class="flex flex-wrap flex-row gap-y-6 justify-between">
 
         <div
-          class="relative hover:shadow-xl duration-500 rounded-[16px] w-full sm:w-[48.5%] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="relative hover:shadow-xl duration-500 rounded-[16px] w-full sm:w-[48.5%] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/collection-1.png" alt="Dress 1" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -917,10 +901,10 @@
         </div>
 
         <div
-          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/collection-2.png" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -943,10 +927,10 @@
           </div>
         </div>
         <div
-          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/collection-3.png" alt="Dress 1" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -969,10 +953,10 @@
           </div>
         </div>
         <div
-          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/collection-4.png" alt="Dress 1" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -995,10 +979,10 @@
           </div>
         </div>
         <div
-          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/collection-5.png" alt="Dress 1" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1022,10 +1006,10 @@
         </div>
 
         <div
-          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/collection-6.png" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1050,10 +1034,10 @@
 
         <!-- hidden card -->
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-7.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1078,10 +1062,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-10.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1106,10 +1090,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-4.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1132,10 +1116,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-2.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1160,10 +1144,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-1.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1188,10 +1172,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-3.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1214,10 +1198,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-4.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1242,10 +1226,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-6.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1270,10 +1254,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-1.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1296,10 +1280,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-2.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1324,10 +1308,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-3.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1352,10 +1336,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-4.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1378,10 +1362,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-6.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1406,10 +1390,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-7.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1434,10 +1418,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-8.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1460,10 +1444,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-10.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1488,10 +1472,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-6.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1516,10 +1500,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-4.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1542,10 +1526,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-9.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1570,10 +1554,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-5.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1598,10 +1582,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-1.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1624,10 +1608,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-5.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1652,10 +1636,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-3.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1680,10 +1664,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-2.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1706,10 +1690,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-3.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1734,10 +1718,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-4.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1762,10 +1746,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-3.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1788,10 +1772,10 @@
           </div>
         </div>
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-1.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1816,10 +1800,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-5.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1844,10 +1828,10 @@
 
 
         <div
-          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px]">
+          class="hidden extra-card relative w-full sm:w-[48.5%] hover:shadow-xl duration-500 rounded-[16px] md:w-[31.5%] xl:w-1/3 sm:max-w-[364px] payModalOpenBtn">
           <div
             class="bg-custom-black rounded-full w-[103px] h-[33px] flex justify-center items-center absolute top-[2.5%] left-[3%]">
-            <p class="text-light-white font-normal text-sm lh-100">Best Seller</p>
+            <p class="text-light-white font-normal text-sm lh-100">Featured</p>
           </div>
           <img src="./assets/images/webp/slide-8.webp" alt="Dress 2" class="w-full rounded-[16px]  object-cover">
           <div class="p-2.5">
@@ -1938,13 +1922,27 @@
     <!-- Swiper -->
     <div class="swiper overflow-hidde">
       <div class="swiper-wrapper">
-
-        <!-- Slide 1 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/test-4.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">Aug 20, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Anjali</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The embroidered kurti I
+                received is so elegant and classy. It's simple enough for casual wear yet perfect for
+                small family gatherings too. The stitching is neat, and the finishing feels professional. I've already
+                washed it
+                twice and it still looks brand new</p>
+            </div>
+          </div>
+        </div>
         <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
           <div
             class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
             <img src="./assets/images/webp/test-1.png" alt="customer"
-              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
             <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
               <p class="text-sm text-[#525252] lh-100 mb-0">May 8, 2025</p>
               <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Ekta</p>
@@ -1957,12 +1955,11 @@
           </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
           <div
             class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
             <img src="./assets/images/webp/test-2.png" alt="customer"
-              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
             <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
               <p class="text-sm text-[#525252] lh-100 mb-0">June 1, 2025</p>
               <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Meena</p>
@@ -1976,12 +1973,11 @@
           </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
           <div
             class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
-            <img src="./assets/images/webp/test-3.png" alt="customer"
-              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <img src="./assets/images/webp/slide-1.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
             <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
               <p class="text-sm text-[#525252] lh-100 mb-0">July 14, 2025</p>
               <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Riya</p>
@@ -1994,24 +1990,442 @@
           </div>
 
         </div>
-
-        <!-- Slide 4 -->
+        <!-- Slide 1 -->
         <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
           <div
             class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
-            <img src="./assets/images/webp/test-4.png" alt="customer"
-              class="h-full w-full min-[470px]:w-[210px] md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <img src="./assets/images/webp/slide-2.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
             <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
-              <p class="text-sm text-[#525252] lh-100 mb-0">Aug 20, 2025</p>
-              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Anjali</p>
-              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The embroidered kurti I
-                received is so elegant and classy. It's simple enough for casual wear yet perfect for
-                small family gatherings too. The stitching is neat, and the finishing feels professional. I've already
-                washed it
-                twice and it still looks brand new</p>
+              <p class="text-sm text-[#525252] lh-100 mb-0">June 14, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Pooja</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">I ordered a two-piece
+                combo set - a stylish top with a skirt - and it's honestly become my favorite outfit. It
+                looks chic without being over the top, and the comfort is unmatched. The material doesn't stick or feel
+                heavy
+                even after long hours of wearing.
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-3.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">January 8, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Kriti</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">
+                The long gown-style dress I purchased is absolutely gorgeous. The fall and flare are so graceful, making
+                it
+                perfect for evening events. When I wore it for a wedding function, literally everyone asked me about it.
+                Totally
+                satisfied with the buy!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-4.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">July 29, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Simran</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I ordered a pastel kurti
+                set and I'm so impressed. The detailing on the sleeves is neat, and the fabric feels soft
+                against the skin. It's light enough for daily use but also stylish enough for occasions. Great value for
+                money</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-10.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">May 22, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Ayesha</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The casual tops I bought
+                are super versatile. I've styled them with jeans, skirts, and even ethnic pants - and
+                each time it looked completely new and trendy. Honestly, I didn't expect such good quality at this price
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-6.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">Feb 10, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Tanya</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I went for the kurti and
+                palazzo combo, and it has quickly become one of my most comfortable outfits. I wear
+                it to college and even for office work sometimes. The color hasn't faded after washes, which is such a
+                relief.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-7.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">July 29, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Ishita</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The trendy dress I
+                ordered fit me like it was tailored for me. It's stylish without being too bold, which is exactly
+                what I prefer. The fabric is soft, breathable, and makes me feel comfortable all day.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-9.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">August 11, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Sakshi</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I purchased a kurti with
+                dupatta set and it was a fantastic decision. The embroidery is so detailed and neat,
+                and the overall look is elegant. I wore it for a family dinner and my relatives loved it</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-8.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">May 26, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5">Radhika</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The combo set of top and
+                pant I bought is super chic. It's perfect for outings with friends, and I've styled it
+                with sneakers as well as heels - both looked great. I love how it feels premium yet affordable</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-5.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">April 1, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Nisha</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The printed dress I
+                ordered was gorgeous. It's airy, comfortable, and doesn't cling uncomfortably in hot
+                weather. I wore it for a small trip with friends, and it made me feel stylish while still being
+                comfortable</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/collection-2.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">April 22, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Sneha</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I got a kurti set and
+                was pleasantly surprised by the quality at such a budget-friendly price. The stitching is
+                clean, the fitting is accurate, and it has a premium finish. I will definitely order more.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-3.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">June 7, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Kavya</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">The off-shoulder top I
+                ordered is now one of my favorite pieces. It fits perfectly and pairs beautifully with my
+                high-waist jeans. I've already worn it three times, and it still looks brand new.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/collection-3.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">July 15, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Shreya</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I purchased a maxi dress
+                and it turned out stunning. The length is perfect, and the design is exactly like the
+                photos. I wore it for a night out with friends, and the compliments I received made me feel so good.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-1.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">April 1, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Divya</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I ordered a kurti and
+                leggings combo and it's perfect for my daily college wear. The fabric is comfortable,
+                doesn't wrinkle easily, and the design is very stylish. I love wearing it again and again</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-6.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">Feb 12, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Neha</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The stylish top I
+                ordered feels premium and works well for both casual and formal occasions. I wore it to the
+                office, and so many colleagues asked where I bought it. Really happy with the purchase.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-6.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">Feb 2, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Charu</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I tried the kurti with
+                straight pants set and it struck the perfect balance between comfort and elegance. The
+                fabric feels durable, and the colors are really eye-catching. This is exactly what I wanted in daily
+                ethnic wear.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-10.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">March 22, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Priya</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The two-piece dress I
+                purchased is just gorgeous. The color matched exactly what was shown online, which
+                is rare. The fitting was amazing, and I felt so confident wearing it at an event. Definitely ordering
+                again!</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-3.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">March 22, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Anuskha</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">I ordered a kurti set and
+                while the quality was excellent, the delivery took 2 days longer than expected. It was
+                a little disappointing since I had planned to wear it for an event, but overall the outfit itself is
+                beautiful.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-4.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">August 3, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Bhavna</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">The dress I received is
+                stunning and fits well. However, I was a little upset because COD was not available
+                due to billing policies. Still, the product itself was worth the effort of pre-paying</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-5.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">June 15, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Kritika</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0">I purchased a top and
+                pant combo and absolutely loved the style. The only issue was that my parcel was
+                delayed and didn't reach on the promised date. Apart from delivery, the outfit is fabulous</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-8.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">March 2, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Jhanvi</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The kurti I ordered is
+                really comfortable and stylish. But honestly, I was a little disheartened because the
+                courier service delayed the delivery by two days. The product is perfect though!</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/slide-4.webp" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">April 18, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Sonam</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I bought a western dress
+                and it's absolutely gorgeous. Sadly, the parcel was not delivered to my home
+                directly - I had to pick it up from the courier office, which was inconvenient. Still, the dress itself
+                is amazing.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-2.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">January 11, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Rupal</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The kurti I ordered is
+                really comfortable and stylish. But honestly, I was a little disheartened because the
+                courier service delayed the delivery by two days. The product is perfect though!</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-3.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">June 19, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Deepika</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> The crop top and jeans
+                combo I purchased is so trendy! It's exactly the kind of modern look I was hoping for.
+                Super stylish and comfortable to wear all day long.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/test-3.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">July 9, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Aarti</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I ordered a maxi kurti
+                and I must say it's amazing. The color hasn't faded even after washing, and the
+                material feels so soft and flowy. It's become my go-to for special occasions</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/combo-kurta-4.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">March 9, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Seema</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I bought a simple kurti
+                for daily wear and it has exceeded expectations. It's so comfortable, doesn't shrink
+                after washing, and the stitching quality is very reliable.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-full lg:!w-[745px] my-5 shadow-ight">
+          <div
+            class="min-[470px]:h-[320px] md:min-h-[296px] max-lg:me-4 max-[470px]:flex-col flex shadow-md bg-white rounded-[16px]">
+            <img src="./assets/images/webp/collection-5.png" alt="customer"
+              class="h-full w-full min-[470px]:w-[210px] max-sm:max-h-[420px] object-top md:w-[245px] object-cover max-[470px]:rounded-[16px] max-[470px]:rounded-b-0 min-[470px]:rounded-l-[16px]" />
+            <div class="py-3 sm:py-6 ps-4 sm:ps-5 md:ps-[42px] pe-4 sm:pe-7">
+              <p class="text-sm text-[#525252] lh-100 mb-0">April 6, 2025</p>
+              <p class="font-bold text-2xl text-[#525252] mb-2 md:mb-4 mt-1 md:mt-2.5"> Ishani</p>
+              <p class="text-sm md:text-base lh-160 text-[#525252] max-w-[437px] mb-3 sm:mb-0"> I went for a combo set
+                of kurti with dupatta and leggings, and I'm extremely happy with it. It's traditional yet
+                modern, and the compliments I got when I wore it made me feel so confident.</p>
+            </div>
+          </div>
+
+        </div>
+
 
 
 
@@ -2135,7 +2549,7 @@
     class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 transition-opacity duration-500 p-4">
 
     <!-- Modal Content -->
-    <div class=" max-w-[900px] md:mx-auto w-full  max-md:translate-y-[15%] max-h-[90vh] overflow-y-auto rounded-[40px]">
+    <div class=" max-w-[900px] md:mx-auto w-full  max-md:translate-y-[5%] max-h-[90vh]  rounded-[40px]">
       <div
         class="bg-white max-w-[900px] w-full flex flex-col items-center justify-center mx-auto max-md:px-4 max-md:py-9 px-6 py-14  rounded-[20px] md:rounded-[30px] lg:rounded-[40px] transform scale-90 opacity-0 transition-all duration-500"
         id="payModalContent">
@@ -2148,19 +2562,19 @@
 
         <!-- Title -->
         <p
-          class="text-3xl sm:text-4xl md:text-[50px] font-semibold text-custom-black !leading-[120%] mt-4 mb-2 md:mb-4 text-center max-w-[500px]">
+          class="text-3xl sm:text-4xl md:text-[40px] font-semibold text-custom-black !leading-[120%] mt-4 mb-2 md:mb-4 text-center max-w-[500px]">
           Scan & Pay for Your Ordered item
         </p>
 
         <!-- Description -->
-        <p class="text-sm sm:text-base text-grey mb-3 md:mb-10 text-center max-w-[550px]">
+        <p class="text-sm sm:text-base text-grey mb-3 md:mb-7 text-center max-w-[550px]">
           Easily complete your payment by scanning the QR code below. Please make sure to enter the correct details so
           we
           can confirm your order quickly.
         </p>
 
         <!-- QR Image -->
-        <img class="rounded-[16px] border border-[#ffccd9] border-[6px] w-[200px] sm:w-[300px] h-auto mb-3 md:mb-10"
+        <img class="rounded-[16px] border border-[#ffccd9] border-[6px] w-[200px] sm:w-[260px] h-auto mb-3 md:mb-4"
           src="./assets/images/webp/bar-code.png" alt="bar code">
 
         <!-- Footer -->
