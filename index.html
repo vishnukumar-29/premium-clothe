@@ -189,7 +189,7 @@
           <div>
             <label class="block text-sm font-medium mb-1 text-grey">Complaint Details</label>
             <textarea name="details" required placeholder="Please describe your problem here"
-              class="w-full border border-[#f1f2f9] h-[100px] lg:h-[145px] rounded-[16px] focus:ring-2 p-3 lg:p-6 focus:ring-pink-500 outline-none"></textarea>
+              class="w-full border border-[#f1f2f9] h-[100px] lg:h-[115px] rounded-[16px] focus:ring-2 p-3 lg:p-4 focus:ring-pink-500 outline-none"></textarea>
           </div>
 
           <div class="flex items-center gap-2">
@@ -583,70 +583,68 @@
 
       <div class="grid lg:grid-cols-2 gap-10 items-start">
 
-        <!-- Left thumbnails + Main Image -->
-        <div class="flex gap-4 col-span-1">
-          <!-- Thumbnails -->
-          <div class="flex flex-col gap-3 md:gap-6 thumbnails">
-              <img src="./assets/images/webp/combo-kurta-5.png"
-              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-blac cursor-pointer"
-              data-index="0">
-            <img src="./assets/images/webp/combo-kurta-2.png"
-              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="1">
-            <img src="./assets/images/webp/combo-kurta-3.png"
-              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="2">
-            <img src="./assets/images/webp/combo-kurta-4.png"
-              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="3">
-            <img src="./assets/images/webp/combo-kurta-7.jpg"
-              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="4">
-            <img src="./assets/images/webp/combo-kurta-6.png"
-              class="w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="5">
-          </div>
+       <!-- Left thumbnails + Main Image -->
+<div class="flex gap-4 col-span-1">
+  <!-- Thumbnails -->
+  <div class="flex flex-col gap-3 md:gap-6 thumbnails">
+    <img src="./assets/images/webp/combo-kurta-5.png"
+      class="thumb w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] cursor-pointer"
+      data-index="0">
+    <img src="./assets/images/webp/combo-kurta-2.png"
+      class="thumb w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+      data-index="1">
+    <img src="./assets/images/webp/combo-kurta-3.png"
+      class="thumb w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+      data-index="2">
+    <img src="./assets/images/webp/combo-kurta-4.png"
+      class="thumb w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+      data-index="3">
+    <img src="./assets/images/webp/combo-kurta-7.jpg"
+      class="thumb w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+      data-index="4">
+    <img src="./assets/images/webp/combo-kurta-6.png"
+      class="thumb w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
+      data-index="5">
+  </div>
 
-          <!-- Main Image -->
-          <div class="relative w-full rounded-xl">
-            <img id="currentImage" src="./assets/images/webp/combo-1.png"
-              class="md:max-w-[470px] rounded-xl max-h-[620px] max-md:h-[480px] w-full h-full object-cover">
-            <div class="flex justify-between items-center max-w-[470px]">
-              <p class="max-w-[200px] text-black text-base mt-6 lh-160">Slide left/right to view more
-                pictures of combo</p>
-              <!-- Arrows -->
-              <div class="gap-x-5 md:gap-x-[56px] flex items-center ">
-                <button id="prevBtn"
-                  class=" border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
-                    width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
-                    <path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5" stroke="black"
-                      stroke-width="2.00176" stroke-linejoin="round" />
-                  </svg>
-                </button>
-                <button id="nextBtn"
-                  class="border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl"><svg
-                    width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
-                    <path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5" stroke="black"
-                      stroke-width="2.00176" stroke-linejoin="round" />
-                  </svg>
-                </button>
-              </div>
-            </div>
+  <!-- Main Image -->
+  <div class="relative w-full rounded-xl">
+    <img id="currentImage" src="./assets/images/webp/combo-kurta-5.png"
+      class="fade-img md:max-w-[470px] rounded-xl max-h-[620px] max-md:h-[480px] w-full h-full object-cover">
 
+    <!-- Caption + Arrows -->
+    <div class="flex justify-between items-center max-w-[470px]">
+      <p class="max-w-[200px] text-black text-base mt-6 lh-160">Slide left/right to view more pictures of combo</p>
+      <div class="gap-x-5 md:gap-x-[56px] flex items-center ">
+        <button id="prevBtn"
+          class="border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+<path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+</svg>
 
-            <!-- Discount Badge -->
-            <div
-              class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white absolute top-[25%] xl:top-[10%] end-[10%] xl:end-[17%] z-50">
-              <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50%
-                <br />
-                <span class="text-grey">Off</span>
-              </p>
+        </button>
+        <button id="nextBtn"
+          class="border border-black bg-white shadow size-8 flex justify-center items-center rounded-full text-xl">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+<path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+</svg>
 
-            </div>
-          </div>
-        </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Discount Badge -->
+    <div
+      class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white absolute top-[25%] xl:top-[10%] end-[10%] xl:end-[17%] z-50">
+      <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50%
+        <br />
+        <span class="text-grey">Off</span>
+      </p>
+    </div>
+  </div>
+</div>
 
         <!-- Right Side: Combo Options -->
         <div class="space-y-6 max-md:pt-14">
@@ -2761,43 +2759,69 @@
       }
     });
   </script>
-  <!-- combo style imgs swiper -->
-  <script>
-    const images = [
-      "./assets/images/webp/model-1.png",
-      "./assets/images/webp/model-2.png",
-      "./assets/images/webp/model-3.png",
-      "./assets/images/webp/model-4.png",
-      "./assets/images/webp/model-5.png",
-      "./assets/images/webp/model-6.png"
-    ];
+ <!-- Script -->
+<script>
+  // Thumbnails images (for arrows)
+  const thumbnailImages = [
+    "./assets/images/webp/combo-kurta-5.png",
+    "./assets/images/webp/combo-kurta-2.png",
+    "./assets/images/webp/combo-kurta-3.png",
+    "./assets/images/webp/combo-kurta-4.png",
+    "./assets/images/webp/combo-kurta-7.jpg",
+    "./assets/images/webp/combo-kurta-6.png"
+  ];
 
-    let currentIndex = 0;
-    const currentImage = document.getElementById("currentImage");
+  // Model images (for clicking thumbnails)
+  const modelImages = [
+    "./assets/images/webp/model-1.png",
+    "./assets/images/webp/model-2.png",
+    "./assets/images/webp/model-3.png",
+    "./assets/images/webp/model-4.png",
+    "./assets/images/webp/model-5.png",
+    "./assets/images/webp/model-6.png"
+  ];
 
-    function updateImage(index) {
-      currentImage.src = images[index];
-      document.querySelectorAll("[data-index]").forEach(img => img.classList.remove("bordr-black"));
-      document.querySelector(`[data-index="${index}"]`).classList.add("bordr-black");
-      currentIndex = index;
-    }
+  let currentIndex = 0;
+  const currentImage = document.getElementById("currentImage");
 
-    document.getElementById("nextBtn").addEventListener("click", () => {
-      let newIndex = (currentIndex + 1) % images.length;
-      updateImage(newIndex);
+  // Fade transition update
+  function updateImage(src) {
+    currentImage.classList.add("fade-out");
+    setTimeout(() => {
+      currentImage.src = src;
+      currentImage.classList.remove("fade-out");
+    }, 300);
+  }
+
+  // Thumbnails click → show model images
+  document.querySelectorAll(".thumb").forEach(img => {
+    img.addEventListener("click", () => {
+      let index = parseInt(img.dataset.index);
+      updateImage(modelImages[index]);
+      document.querySelectorAll(".thumb").forEach(t => t.classList.remove("border-black"));
+      img.classList.add("border-black");
     });
+  });
 
-    document.getElementById("prevBtn").addEventListener("click", () => {
-      let newIndex = (currentIndex - 1 + images.length) % images.length;
-      updateImage(newIndex);
-    });
+  // Arrows → cycle through thumbnail images
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % thumbnailImages.length;
+    updateImage(thumbnailImages[currentIndex]);
+    highlightThumb(currentIndex);
+  });
 
-    document.querySelectorAll("[data-index]").forEach(img => {
-      img.addEventListener("click", () => {
-        updateImage(parseInt(img.dataset.index));
-      });
-    });
-  </script>
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + thumbnailImages.length) % thumbnailImages.length;
+    updateImage(thumbnailImages[currentIndex]);
+    highlightThumb(currentIndex);
+  });
+
+  // Highlight active thumbnail
+  function highlightThumb(index) {
+    document.querySelectorAll(".thumb").forEach(t => t.classList.remove("border-black"));
+    document.querySelector(`.thumb[data-index="${index}"]`).classList.add("border-black");
+  }
+</script>
   <!-- testinomials slider -->
   <script>
     const swiper = new Swiper(".swiper", {
