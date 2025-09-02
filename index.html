@@ -4252,54 +4252,27 @@
 
 <!-- video slide -->
 <script>
-  // Initialize Swiper with custom class
   const videoSwiper = new Swiper(".videoSlider", {
     loop: true,
     spaceBetween: 20,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
     },
     centeredSlides: false,
-
-    // Responsive settings
     breakpoints: {
-      0: {          // mobile
+      0: {         
         slidesPerView: 1,
       },
-      640: {        // tablet
+      640: {      
         slidesPerView: 2,
       },
-      1024: {       // desktop
+      1024: {      
         slidesPerView: 3,
       },
     },
   });
 
-  // Ensure all videos play at the same time & stay fixed size
-  document.querySelectorAll("video").forEach(video => {
-    // Force inline playback (prevents fullscreen on mobile)
-    video.setAttribute("playsinline", "");
-    video.setAttribute("webkit-playsinline", "");
 
-    // Start playing
-    video.play().catch(() => {
-      // Autoplay might be blocked until user interacts
-      video.muted = true;
-      video.play();
-    });
-
-    // Toggle play/pause on click
-    video.addEventListener("click", () => {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
-  });
-
-  // Like button toggle
   document.querySelectorAll(".likeBtn").forEach(btn => {
     btn.addEventListener("click", () => {
       const svgPath = btn.querySelector("path");
