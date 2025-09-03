@@ -583,70 +583,51 @@
 
       <div class="grid lg:grid-cols-2 gap-10 items-start">
 
-        <!-- Left thumbnails + Main Image -->
-        <div class="flex gap-4 col-span-1">
-          <!-- Thumbnails -->
-          <div class="flex flex-col gap-2 sm:gap-3 md:gap-6 thumbnails">
-            <img src="./assets/images/webp/combo-kurta-5.png"
-              class="thumb w-[50px] max-sm:max-h-[50px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] cursor-pointer"
-              data-index="0">
-            <img src="./assets/images/webp/combo-kurta-2.png"
-              class="thumb w-[50px] max-sm:max-h-[50px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="1">
-            <img src="./assets/images/webp/combo-kurta-3.png"
-              class="thumb w-[50px] max-sm:max-h-[50px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="2">
-            <img src="./assets/images/webp/combo-kurta-4.png"
-              class="thumb w-[50px] max-sm:max-h-[50px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="3">
-            <img src="./assets/images/webp/combo-kurta-7.jpg"
-              class="thumb w-[50px] max-sm:max-h-[50px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="4">
-            <img src="./assets/images/webp/combo-kurta-6.png"
-              class="thumb w-[50px] max-sm:max-h-[50px] md:w-[73px] md:h-[100px] object-cover rounded-md border-2 min-w-[50px] md:min-w-[73px] min-h-[70px] md:min-h-[100px] border-transparent cursor-pointer"
-              data-index="5">
-          </div>
+      <div class="flex gap-4 col-span-1">
+    <!-- Thumbnails -->
+    <div class="flex flex-col gap-2 sm:gap-3 md:gap-6 thumbnails">
+      <img src="./assets/images/webp/combo-kurta-5.png" class="thumb border-2 border-transparent cursor-pointer w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md" data-index="0">
+      <img src="./assets/images/webp/combo-kurta-2.png" class="thumb border-2 border-transparent cursor-pointer w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md" data-index="1">
+      <img src="./assets/images/webp/combo-kurta-3.png" class="thumb border-2 border-transparent cursor-pointer w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md" data-index="2">
+      <img src="./assets/images/webp/combo-kurta-4.png" class="thumb border-2 border-transparent cursor-pointer w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md" data-index="3">
+      <img src="./assets/images/webp/combo-kurta-7.jpg" class="thumb border-2 border-transparent cursor-pointer w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md" data-index="4">
+      <img src="./assets/images/webp/combo-kurta-6.png" class="thumb border-2 border-transparent cursor-pointer w-[50px] h-[70px] md:w-[73px] md:h-[100px] object-cover rounded-md" data-index="5">
+    </div>
 
-          <!-- Main Image -->
-          <div class="relative w-full rounded-xl">
-            <img id="currentImage" src="./assets/images/webp/combo-kurta-5.png"
-              class="fade-img md:max-w-[470px] rounded-xl max-h-[620px] max-sm:h-[400px] max-md:h-[480px] w-full h-full object-cover">
+    <!-- Main Image -->
+    <div class="relative w-full rounded-xl">
+      <img id="currentImage" src="./assets/images/webp/model-1.png"
+        class="fade-img md:max-w-[470px] rounded-xl max-h-[620px] max-sm:h-[400px] max-md:h-[480px] w-full h-full object-cover">
 
-            <!-- Caption + Arrows -->
-            <div class="flex justify-between items-center max-w-[470px]">
-              <p class="max-sm:max-w-[200px] max-w-[240px] text-xs  text-black sm:text-base max-sm:mt-3 mt-6 lh-160">Slide left/right to view more pictures of combo
-              </p>
-              <div class="gap-x-2 sm:gap-x-5 md:gap-x-[56px] flex items-center ">
-                <button id="prevBtn"
-                  class="border border-black bg-transparent shadow size-8 flex justify-center items-center rounded-full text-xl">
-                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
-                    <path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5" stroke="black"
-                      stroke-width="2.00176" stroke-linejoin="round" />
-                  </svg>
-
-                </button>
-                <button id="nextBtn"
-                  class="border border-black bg-transparent shadow size-8 flex justify-center items-center rounded-full text-xl">
-                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round" />
-                    <path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5" stroke="black"
-                      stroke-width="2.00176" stroke-linejoin="round" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Discount Badge -->
-            <div
+      <!-- Caption + Arrows -->
+      <div class="flex justify-between items-center max-w-[470px]">
+        <p class="max-sm:max-w-[200px] max-w-[240px] text-xs text-black sm:text-base max-sm:mt-3 mt-6 lh-160">
+          Slide left/right to view more pictures of combo
+        </p>
+        <div class="gap-x-2 sm:gap-x-5 md:gap-x-[56px] flex items-center">
+          <button id="prevBtn" class="border border-black bg-transparent shadow size-8 flex justify-center items-center rounded-full text-xl">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none">
+              <path d="M2.5 7.5L15.5 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+              <path d="M7.5 1.5C5.15685 3.84315 3.84315 5.15685 1.5 7.5L7.5 13.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button id="nextBtn" class="border border-black bg-transparent shadow size-8 flex justify-center items-center rounded-full text-xl">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none">
+              <path d="M13.5 7.5L0.500015 7.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+              <path d="M8.5 1.5C10.8431 3.84315 12.1569 5.15685 14.5 7.5L8.5 13.5" stroke="black" stroke-width="2.00176" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+       <div
               class="size-[90px] xl:size-[147px] flex flex-col justify-center items-center rounded-full bg-white absolute top-[6%] md:top-[25%] xl:top-[10%] end-[10%] xl:end-[17%] z-50">
               <p class="text-2xl xl:text-[40px] font-mediun text-pink text-center !leading-[100%]">50%
                 <br />
                 <span class="text-grey">Off</span>
               </p>
             </div>
-          </div>
-        </div>
+    </div>
+  </div>
 
         <!-- Right Side: Combo Options -->
         <div class="space-y-6 max-md:pt-14">

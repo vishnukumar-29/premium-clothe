@@ -155,71 +155,71 @@
     });
   
 
+    // Thumbnail images (sidebar preview)
+    const thumbnailImages = [
+      "./assets/images/webp/combo-kurta-5.png",
+      "./assets/images/webp/combo-kurta-2.png",
+      "./assets/images/webp/combo-kurta-3.png",
+      "./assets/images/webp/combo-kurta-4.png",
+      "./assets/images/webp/combo-kurta-7.jpg",
+      "./assets/images/webp/combo-kurta-6.png"
+    ];
 
-// Thumbnail images (for showing in sidebar)
-const thumbnailImages = [
-  "./assets/images/webp/combo-kurta-5.png",
-  "./assets/images/webp/combo-kurta-2.png",
-  "./assets/images/webp/combo-kurta-3.png",
-  "./assets/images/webp/combo-kurta-4.png",
-  "./assets/images/webp/combo-kurta-7.jpg",
-  "./assets/images/webp/combo-kurta-6.png"
-];
+    // Model images (main preview only for thumbnail click)
+    const modelImages = [
+      "./assets/images/webp/model-1.png",
+      "./assets/images/webp/model-2.png",
+      "./assets/images/webp/model-3.png",
+      "./assets/images/webp/model-4.png",
+      "./assets/images/webp/model-5.png",
+      "./assets/images/webp/model-6.png"
+    ];
 
-// Model images (for showing in main large preview)
-const modelImages = [
-  "./assets/images/webp/model-1.png",
-  "./assets/images/webp/model-2.png",
-  "./assets/images/webp/model-3.png",
-  "./assets/images/webp/model-4.png",
-  "./assets/images/webp/model-5.png",
-  "./assets/images/webp/model-6.png"
-];
+    let currentIndex = 0;
+    const currentImage = document.getElementById("currentImage");
 
-let currentIndex = 0;
-const currentImage = document.getElementById("currentImage");
+    // Fade transition update
+    function updateImage(src) {
+      currentImage.classList.add("fade-out");
+      setTimeout(() => {
+        currentImage.src = src;
+        currentImage.classList.remove("fade-out");
+      }, 300);
+    }
 
-// Fade transition update
-function updateImage(src) {
-  currentImage.classList.add("fade-out");
-  setTimeout(() => {
-    currentImage.src = src;
-    currentImage.classList.remove("fade-out");
-  }, 300);
-}
+    // Highlight active thumbnail
+    function highlightThumb(index) {
+      document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active"));
+      document.querySelector(`.thumb[data-index="${index}"]`).classList.add("active");
+    }
 
-// Thumbnails click → show model images
-document.querySelectorAll(".thumb").forEach(img => {
-  img.addEventListener("click", () => {
-    let index = parseInt(img.dataset.index);
-    currentIndex = index; // ✅ keep track of current image
-    updateImage(modelImages[index]);
-    highlightThumb(index);
-  });
-});
+    // Thumbnails click → show model images
+    document.querySelectorAll(".thumb").forEach(img => {
+      img.addEventListener("click", () => {
+        let index = parseInt(img.dataset.index);
+        currentIndex = index;
+        updateImage(modelImages[index]); // 👈 model image on thumbnail click
+        highlightThumb(index);
+      });
+    });
 
-// Arrows → cycle through **model images**
-document.getElementById("nextBtn").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % modelImages.length;
-  updateImage(modelImages[currentIndex]); // ✅ fixed
-  highlightThumb(currentIndex);
-});
+    // Next Arrow → show combo images
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % thumbnailImages.length;
+      updateImage(thumbnailImages[currentIndex]); // 👈 combo image on arrow click
+      highlightThumb(currentIndex);
+    });
 
-document.getElementById("prevBtn").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + modelImages.length) % modelImages.length;
-  updateImage(modelImages[currentIndex]); // ✅ fixed
-  highlightThumb(currentIndex);
-});
+    // Prev Arrow → show combo images
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + thumbnailImages.length) % thumbnailImages.length;
+      updateImage(thumbnailImages[currentIndex]); // 👈 combo image on arrow click
+      highlightThumb(currentIndex);
+    });
 
-// Highlight active thumbnail
-function highlightThumb(index) {
-  document.querySelectorAll(".thumb").forEach(t => t.classList.remove("border-black"));
-  document.querySelector(`.thumb[data-index="${index}"]`).classList.add("border-black");
-}
-
-// ✅ Initialize with first model image
-updateImage(modelImages[0]);
-highlightThumb(0);
+    // Initialize with first model image
+    updateImage(modelImages[0]);
+    highlightThumb(0);
 
 
 

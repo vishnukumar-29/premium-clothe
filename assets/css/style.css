@@ -342,3 +342,13 @@
 .fade-out {
   opacity: 0;
 }
+
+   .fade-img {
+      transition: opacity 0.3s ease-in-out;
+    }
+    .fade-out {
+      opacity: 0;
+    }
+    .thumb.active {
+      border-color: black !important;
+    }
